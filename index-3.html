@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"/>
+<title>NMPS Portal | Namu Model Primary School, Maiduguri</title>
+<meta name="description" content="Official school management portal for Namu Model Primary School, Maiduguri — pupil records, results checker, fee payment and school dashboard."/>
+<meta name="author" content="Namu Model Primary School"/>
+<meta name="application-name" content="NMPS Portal"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="referrer" content="no-referrer"/>
+<meta name="theme-color" content="#4338CA"/>
+<meta name="color-scheme" content="light"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="NMPS Portal"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="NMPS Portal — Namu Model Primary School"/>
+<meta property="og:description" content="Pupil records, results checker, fee payment and school dashboard for Namu Model Primary School, Maiduguri."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234338CA'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E"/>
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234338CA'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E"/>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk5NUFMgUG9ydGFsIFx1MjAxNCBOYW11IE1vZGVsIFByaW1hcnkgU2Nob29sIiwgInNob3J0X25hbWUiOiAiTk1QUyBQb3J0YWwiLCAiZGVzY3JpcHRpb24iOiAiT2ZmaWNpYWwgc2Nob29sIG1hbmFnZW1lbnQgcG9ydGFsIGZvciBOYW11IE1vZGVsIFByaW1hcnkgU2Nob29sLCBNYWlkdWd1cmkuIiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0LXByaW1hcnkiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjRjBGNEZGIiwgInRoZW1lX2NvbG9yIjogIiM0MzM4Q0EiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ3JlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScyMicgZmlsbD0nJTIzNDMzOENBJy8lM0UlM0N0ZXh0IHg9JzUwJyB5PSc2OCcgZm9udC1zaXplPSc1OCcgdGV4dC1hbmNob3I9J21pZGRsZSclM0UlRjAlOUYlOEUlOTMlM0MvdGV4dCUzRSUzQy9zdmclM0UiLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ3JlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScyMicgZmlsbD0nJTIzNDMzOENBJy8lM0UlM0N0ZXh0IHg9JzUwJyB5PSc2OCcgZm9udC1zaXplPSc1OCcgdGV4dC1hbmNob3I9J21pZGRsZSclM0UlRjAlOUYlOEUlOTMlM0MvdGV4dCUzRSUzQy9zdmclM0UiLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ3JlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScyMicgZmlsbD0nJTIzNDMzOENBJy8lM0UlM0N0ZXh0IHg9JzUwJyB5PSc2OCcgZm9udC1zaXplPSc1OCcgdGV4dC1hbmNob3I9J21pZGRsZSclM0UlRjAlOUYlOEUlOTMlM0MvdGV4dCUzRSUzQy9zdmclM0UiLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJtYXNrYWJsZSJ9XX0="/>
+<style>
+/* ═══ BASE ═══════════════════════════════════════════════════════════════════*/
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{min-height:100%;-webkit-overflow-scrolling:touch;background:#F0F4FF;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,Arial,sans-serif;color:#1E293B;
+  padding-top:env(safe-area-inset-top);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);
+  -webkit-tap-highlight-color:transparent;}
+button{font-family:inherit;cursor:pointer;border:none;-webkit-transition:-webkit-transform .13s,filter .13s;transition:transform .13s,filter .13s;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+button:hover{filter:brightness(1.07);-webkit-transform:translateY(-1px);transform:translateY(-1px);}
+button:active{-webkit-transform:scale(.97);transform:scale(.97);}
+input,select,textarea{font-family:inherit;}
+input:focus,select:focus,textarea:focus{outline:2px solid #6366F1;outline-offset:0;}
+a{text-decoration:none;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-thumb{background:#CBD5E1;border-radius:10px;}
+
+/* ═══ ANIMATIONS ═════════════════════════════════════════════════════════════*/
+@-webkit-keyframes pop{from{opacity:0;-webkit-transform:scale(.82) translateY(22px);transform:scale(.82) translateY(22px)}to{opacity:1;-webkit-transform:none;transform:none}} @keyframes pop{from{opacity:0;transform:scale(.82) translateY(22px)}to{opacity:1;transform:none}}
+@keyframes twink{from{opacity:.04}to{opacity:.55}}
+@-webkit-keyframes fadein{from{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}to{opacity:1;-webkit-transform:none;transform:none}} @keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@-webkit-keyframes growbar{from{width:0}to{width:100%}} @keyframes growbar{from{width:0}to{width:100%}}
+
+/* ═══ SPLASH ═════════════════════════════════════════════════════════════════*/
+#splash{position:fixed;top:0;right:0;bottom:0;left:0;background:#0f2027;z-index:9000;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transition:opacity .5s;}
+#splash.hide{opacity:0;pointer-events:none;}
+.sp-emoji{font-size:64px;margin-bottom:16px;}
+.sp-name{color:#FFD700;font-size:21px;font-weight:800;text-align:center;margin-bottom:4px;}
+.sp-sub{color:rgba(255,255,255,.35);font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:28px;}
+.sp-bar{width:160px;height:4px;background:rgba(255,255,255,.1);border-radius:10px;overflow:hidden;}
+.sp-fill{height:100%;width:0;background:linear-gradient(90deg,#FFD700,#FF8C00);border-radius:10px;animation:growbar 1.8s ease forwards;}
+
+/* ═══ TOAST ══════════════════════════════════════════════════════════════════*/
+#toast{position:fixed;top:16px;right:16px;z-index:8000;
+  color:white;padding:12px 20px;border-radius:14px;font-weight:800;font-size:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+  opacity:0;transform:translateY(-8px);-webkit-transition:all .25s;transition:all .25s;pointer-events:none;}
+#toast.show{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}
+
+/* ═══ PAGE SYSTEM ════════════════════════════════════════════════════════════*/
+.page{display:none;min-height:100vh;animation:fadein .3s ease;}
+.page.on{display:block;}
+
+/* ═══ LOGIN PAGE ═════════════════════════════════════════════════════════════*/
+#pg-login{min-height:100vh;display:none;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#0f2027,#1a3248,#2c5364);
+  padding:20px;position:relative;overflow:hidden;}
+#pg-login.on{display:flex;}
+.star{position:absolute;border-radius:50%;background:white;animation:twink 2s infinite alternate;}
+.login-card{background:rgba(255,255,255,.07);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1.5px solid rgba(255,255,255,.13);border-radius:30px;
+  padding:42px 34px;max-width:420px;width:100%;text-align:center;
+  box-shadow:0 28px 70px rgba(0,0,0,.5);-webkit-animation:pop .4s cubic-bezier(.34,1.56,.64,1);animation:pop .4s cubic-bezier(.34,1.56,.64,1);}
+.login-logo{font-size:54px;margin-bottom:12px;}
+.login-school{color:#FFD700;font-size:21px;font-weight:800;line-height:1.25;margin-bottom:4px;}
+.login-loc{color:rgba(255,255,255,.38);font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:24px;}
+.mode-tabs{display:flex;background:rgba(255,255,255,.08);border-radius:13px;padding:4px;margin-bottom:22px;gap:4px;}
+.mode-tab{flex:1;padding:9px;border-radius:10px;font-size:13px;font-weight:800;
+  background:transparent;color:rgba(255,255,255,.38);-webkit-transition:all .18s;transition:all .18s;}
+.mode-tab.active{background:rgba(255,255,255,.18);color:#FFD700;}
+.login-label{color:rgba(255,255,255,.6);font-size:13px;font-weight:700;margin-bottom:7px;text-align:left;}
+.login-input{width:100%;padding:13px 14px;border-radius:12px;
+  border:2px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);
+  color:white;font-size:16px;font-weight:700;margin-bottom:13px;}
+.login-input::placeholder{color:rgba(255,255,255,.35);}
+.login-input.err{border-color:#EF4444;}
+.login-hint{color:rgba(255,255,255,.28);font-size:11px;margin-bottom:13px;line-height:1.5;}
+.forgot-link{color:#FBBF24;font-size:12px;font-weight:700;text-align:center;margin-top:12px;cursor:pointer;text-decoration:underline;text-underline-offset:2px;}
+.forgot-link:hover{color:#FDE68A;}
+.femail-wrap{max-width:340px;width:calc(100% - 32px);background:#fff;border-radius:18px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
+.femail-bar{background:#1E293B;color:#fff;padding:14px 18px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px;}
+.femail-body{padding:20px;}
+.femail-envelope{border:1px solid #E2E8F0;border-radius:12px;overflow:hidden;margin-top:14px;}
+.femail-head{background:#F8FAFC;padding:12px 14px;border-bottom:1px solid #E2E8F0;font-size:12px;color:#64748B;}
+.femail-head b{color:#1E293B;}
+.femail-content{padding:16px 14px;font-size:13px;color:#334155;line-height:1.6;}
+.femail-code{background:#EEF2FF;color:#4338CA;font-size:22px;font-weight:800;letter-spacing:4px;text-align:center;padding:12px;border-radius:10px;margin:12px 0;}
+.femail-note{background:#FFFBEB;border:1px solid #FDE68A;color:#92400E;font-size:11px;padding:10px 12px;border-radius:10px;margin-top:14px;line-height:1.5;}
+.login-error{color:#FCA5A5;font-size:13px;font-weight:800;margin-top:12px;}
+.eye-wrap{position:relative;margin-bottom:13px;}
+.eye-wrap .login-input{margin-bottom:0;padding-right:44px;}
+.eye-btn{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  background:none;border:none;cursor:pointer;font-size:16px;color:rgba(255,255,255,.45);padding:4px;}
+
+/* ═══ SETUP PAGE (first-time password) ═══════════════════════════════════════*/
+#pg-setup{min-height:100vh;display:none;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#0f2027,#1a3248,#2c5364);
+  padding:20px;position:relative;overflow:hidden;}
+#pg-setup.on{display:flex;}
+.setup-card{background:rgba(255,255,255,.07);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1.5px solid rgba(255,255,255,.13);border-radius:30px;
+  padding:42px 34px;max-width:430px;width:100%;
+  box-shadow:0 28px 70px rgba(0,0,0,.5);-webkit-animation:pop .4s cubic-bezier(.34,1.56,.64,1);animation:pop .4s cubic-bezier(.34,1.56,.64,1);}
+.setup-avatar-ring{width:70px;height:70px;border-radius:22px;margin:0 auto 14px;
+  display:flex;align-items:center;justify-content:center;font-size:36px;}
+.setup-welcome{color:#FFD700;font-size:20px;font-weight:800;text-align:center;margin-bottom:4px;}
+.setup-sub{color:rgba(255,255,255,.45);font-size:13px;text-align:center;margin-bottom:22px;line-height:1.5;}
+.setup-idbar{background:rgba(255,255,255,.08);border-radius:12px;padding:11px 16px;
+  margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;}
+.setup-idbar-key{color:rgba(255,255,255,.38);font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;}
+.setup-idbar-val{color:#FFD700;font-weight:900;font-size:14px;font-family:monospace;}
+.setup-idbar-cls{color:white;font-weight:800;font-size:13px;}
+.pw-strength-track{background:rgba(255,255,255,.1);border-radius:20px;height:5px;overflow:hidden;margin:6px 0 3px;}
+.pw-strength-fill{height:100%;border-radius:20px;transition:width .3s,background .3s;}
+.pw-strength-label{font-size:11px;font-weight:700;text-align:right;margin-bottom:8px;}
+.setup-match{font-size:12px;font-weight:700;color:#22C55E;margin-bottom:10px;}
+.setup-mismatch{font-size:12px;font-weight:700;color:#EF4444;margin-bottom:10px;}
+.setup-tip{background:rgba(255,255,255,.06);border-radius:10px;padding:10px 14px;
+  font-size:12px;color:rgba(255,255,255,.4);line-height:1.5;margin-bottom:16px;}
+.setup-error{background:rgba(239,68,68,.2);border-radius:10px;padding:10px 14px;
+  color:#FCA5A5;font-size:13px;font-weight:700;margin-bottom:14px;}
+
+/* ═══ TOPBAR ══════════════════════════════════════════════════════════════════*/
+.topbar{background:linear-gradient(135deg,#1e3a5f,#2d5986);
+  padding:14px 20px;display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 4px 16px rgba(0,0,0,.2);position:sticky;top:0;z-index:200;
+  flex-wrap:wrap;gap:10px;}
+.topbar-title{color:#FFD700;font-size:18px;font-weight:800;}
+.topbar-sub{color:rgba(255,255,255,.42);font-size:11px;letter-spacing:2px;margin-top:1px;}
+.topbar-actions{display:flex;gap:7px;flex-wrap:wrap;}
+.tb-btn{background:rgba(255,255,255,.13);color:white;border-radius:11px;
+  padding:9px 14px;font-size:13px;font-weight:700;}
+.tb-btn.gold{background:#FFD700;color:#1e3a5f;font-weight:900;}
+.sync-badge{display:inline-flex;align-items:center;gap:5px;padding:8px 13px;border-radius:11px;
+  font-size:12px;font-weight:800;white-space:nowrap;transition:.2s;}
+.sync-badge.sync-local{background:rgba(255,255,255,.13);color:rgba(255,255,255,.75);}
+.sync-badge.sync-connecting{background:#FEF3C7;color:#92400E;}
+.sync-badge.sync-ok{background:#DCFCE7;color:#166534;}
+.sync-badge.sync-err{background:#FEE2E2;color:#991B1B;}
+
+/* ═══ CONTENT WRAPPER ════════════════════════════════════════════════════════*/
+.content{max-width:960px;margin:0 auto;padding:20px 18px 30px;}
+.pcontent{max-width:660px;margin:0 auto;padding:0 14px 80px;}
+
+/* ═══ STAT GRID ══════════════════════════════════════════════════════════════*/
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px;}
+.stat-card{background:white;border-radius:18px;padding:14px 16px;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);display:flex;align-items:center;gap:12px;}
+.stat-icon{font-size:26px;}
+.stat-val{font-size:24px;font-weight:900;line-height:1;}
+.stat-label{font-size:11px;color:#94A3B8;font-weight:700;margin-top:2px;}
+
+/* ═══ FILTERS ════════════════════════════════════════════════════════════════*/
+.filters{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;}
+.fi{padding:10px 13px;border-radius:11px;border:2px solid #E2E8F0;
+  font-size:16px;font-weight:600;color:#1E293B;background:white;width:100%;}
+.fi:focus{outline:2px solid #6366F1;}
+
+/* ═══ PUPIL LIST ═════════════════════════════════════════════════════════════*/
+.list-box{background:white;border-radius:20px;box-shadow:0 2px 16px rgba(0,0,0,.07);overflow:hidden;}
+.prow{display:flex;align-items:center;gap:12px;padding:13px 18px;
+  border-bottom:1px solid #F1F5F9;flex-wrap:wrap;transition:background .15s;cursor:default;}
+.prow:hover{background:#EEF2FF;}
+.prow-icon{width:44px;height:44px;border-radius:13px;
+  display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.prow-name{font-weight:800;font-size:15px;color:#1E293B;}
+.prow-meta{font-size:12px;color:#94A3B8;font-weight:600;margin-top:1px;}
+.id-badge{background:#F0F4FF;border-radius:7px;padding:2px 8px;
+  font-family:monospace;font-weight:700;color:#6366F1;font-size:12px;margin-right:4px;}
+.prow-pills{display:flex;gap:5px;flex-wrap:wrap;align-items:center;}
+.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;}
+.prow-actions{display:flex;gap:6px;flex-shrink:0;margin-left:auto;flex-wrap:wrap;}
+.btn-edit{background:#EEF2FF;color:#6366F1;border-radius:10px;padding:7px 13px;font-size:12px;font-weight:800;}
+.btn-del{background:#FEE2E2;color:#DC2626;border-radius:10px;padding:7px 11px;font-size:12px;font-weight:800;}
+.btn-rpw{background:#FEF3C7;color:#92400E;border-radius:10px;padding:7px 11px;font-size:12px;font-weight:800;}
+.empty-list{padding:60px 20px;text-align:center;color:#94A3B8;}
+.empty-list .ei{font-size:50px;margin-bottom:12px;}
+.empty-list .et{font-weight:800;font-size:16px;margin-bottom:4px;}
+.empty-list .es{font-size:13px;}
+
+/* ═══ PAGINATION ══════════════════════════════════════════════════════════════*/
+.pager{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.pager-info{font-size:12px;color:#94A3B8;font-weight:700;}
+.pager-nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.pg-btn{background:white;border:1.5px solid #E2E8F0;border-radius:10px;padding:7px 14px;
+  font-size:13px;font-weight:800;color:#4338CA;cursor:pointer;transition:.15s;}
+.pg-btn:hover:not(:disabled){background:#EEF2FF;border-color:#C7D2FE;}
+.pg-btn:disabled{opacity:.35;cursor:not-allowed;}
+.pg-num{background:white;border:1.5px solid #E2E8F0;border-radius:10px;min-width:34px;height:34px;
+  padding:0 4px;font-size:13px;font-weight:800;color:#475569;cursor:pointer;transition:.15s;}
+.pg-num:hover{background:#EEF2FF;border-color:#C7D2FE;}
+.pg-cur{background:#4338CA;border-color:#4338CA;color:white;}
+.pg-dots{padding:0 4px;color:#94A3B8;font-weight:800;}
+
+/* ═══ CARDS ══════════════════════════════════════════════════════════════════*/
+.card{background:white;border-radius:20px;padding:18px 20px;
+  box-shadow:0 2px 16px rgba(0,0,0,.07);margin-bottom:14px;}
+.card-title{font-size:15px;font-weight:800;color:#1E293B;margin-bottom:14px;}
+
+/* ═══ FORM FIELDS ════════════════════════════════════════════════════════════*/
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
+.field>label{font-size:11px;font-weight:800;color:#64748B;
+  letter-spacing:.5px;text-transform:uppercase;}
+.finp{padding:10px 13px;border-radius:11px;border:2px solid #E2E8F0;
+  font-size:16px;font-weight:600;color:#1E293B;background:white;width:100%;}
+.finp:focus{outline:2px solid #6366F1;}
+.finp.ok{border-color:#16A34A;}
+.finp.bad{border-color:#EF4444;}
+textarea.finp{resize:vertical;}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:500px){.fgrid{grid-template-columns:1fr;}}
+.fspan{grid-column:span 2;}
+@media(max-width:500px){.fspan{grid-column:span 1;}}
+
+/* ═══ AVATAR PICKER ══════════════════════════════════════════════════════════*/
+.av-grid{display:flex;flex-wrap:wrap;gap:8px;}
+.av-btn{font-size:26px;padding:7px;border-radius:12px;cursor:pointer;
+  border:3px solid transparent;background:#F8FAFC;transition:all .15s;}
+.av-btn.sel{border-color:#6366F1;background:#EEF2FF;}
+
+/* ═══ GRADES TABLE ═══════════════════════════════════════════════════════════*/
+.gtable-wrap{overflow-x:auto;}
+.gtable{width:100%;border-collapse:separate;border-spacing:0 4px;min-width:620px;}
+.gtable th{padding:8px 6px;font-size:11px;font-weight:800;color:#64748B;
+  text-align:left;background:#F8FAFC;}
+.gtable td{padding:4px 5px;}
+.gtable .ghas{background:#F0FFF4;}
+.gscore-inp{width:66px;padding:6px 4px;border-radius:10px;border:2px solid #E2E8F0;
+  font-size:16px;font-weight:600;color:#1E293B;text-align:center;background:white;}
+.gscore-inp:focus{outline:2px solid #6366F1;}
+
+/* ═══ HW / NOTICE ITEMS ══════════════════════════════════════════════════════*/
+.item-row{display:flex;justify-content:space-between;align-items:center;
+  padding:10px 13px;background:#F8FAFC;border-radius:12px;margin-bottom:8px;gap:8px;}
+.item-title{font-weight:800;font-size:13px;color:#1E293B;}
+.item-sub{font-size:12px;color:#64748B;}
+.btn-remove{background:#FEE2E2;color:#DC2626;border-radius:8px;
+  padding:5px 10px;font-size:12px;font-weight:800;flex-shrink:0;}
+
+/* ═══ UPLOAD ZONE ════════════════════════════════════════════════════════════*/
+.upload-zone{border:2.5px dashed #CBD5E1;border-radius:16px;padding:28px;
+  text-align:center;cursor:pointer;transition:all .2s;display:block;}
+.upload-zone:hover{border-color:#6366F1;background:#EEF2FF;}
+
+/* ═══ STEP TABS ══════════════════════════════════════════════════════════════*/
+.step-tabs{display:flex;background:white;border-bottom:2px solid #E2E8F0;
+  position:sticky;top:56px;z-index:100;}
+.step-tab{flex:1;padding:13px 6px;border:none;background:transparent;
+  font-family:inherit;font-weight:800;font-size:13px;cursor:pointer;
+  color:#94A3B8;border-bottom:3px solid transparent;transition:all .15s;}
+.step-tab.active{color:#6366F1;border-bottom-color:#6366F1;}
+
+/* ═══ FORM FOOTER ════════════════════════════════════════════════════════════*/
+.form-footer{position:fixed;bottom:0;left:0;right:0;background:white;
+  border-top:2px solid #E2E8F0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));display:flex;
+  gap:10px;justify-content:flex-end;box-shadow:0 -4px 16px rgba(0,0,0,.08);z-index:300;}
+.btn-cancel{background:white;border:2px solid #E2E8F0;color:#64748B;
+  font-size:14px;font-weight:800;border-radius:12px;padding:11px 20px;}
+.btn-back{background:#F1F5F9;color:#475569;font-size:14px;font-weight:800;border-radius:12px;padding:11px 20px;}
+.btn-next{background:#6366F1;color:white;font-size:14px;font-weight:800;border-radius:12px;padding:11px 22px;}
+.btn-save{background:linear-gradient(135deg,#10B981,#059669);color:white;
+  font-size:14px;font-weight:900;border-radius:12px;padding:11px 26px;}
+
+/* ═══ PUPIL HEADER ═══════════════════════════════════════════════════════════*/
+.pupil-hdr{padding:18px 16px 14px;border-radius:0 0 26px 26px;
+  position:sticky;top:0;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,.12);}
+.pupil-hdr-inner{display:flex;justify-content:space-between;align-items:center;
+  max-width:660px;margin:0 auto;}
+.pupil-av{width:50px;height:50px;border-radius:16px;background:rgba(255,255,255,.28);
+  display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;}
+.pupil-name-hdr{color:white;font-size:18px;font-weight:800;line-height:1.1;}
+.pupil-cls-hdr{color:rgba(255,255,255,.78);font-size:12px;font-weight:600;margin-top:1px;}
+.hdr-btn{background:rgba(255,255,255,.22);color:white;border-radius:10px;
+  padding:7px 12px;font-size:12px;font-weight:800;}
+
+/* ═══ BOTTOM NAV ══════════════════════════════════════════════════════════════*/
+.bot-nav{position:fixed;bottom:0;left:0;right:0;background:white;
+  box-shadow:0 -4px 20px rgba(0,0,0,.1);display:flex;
+  padding-bottom:env(safe-area-inset-bottom);
+  border-radius:22px 22px 0 0;overflow:hidden;z-index:200;}
+.bot-btn{flex:1;padding:11px 0;background:transparent;border:none;
+  display:flex;flex-direction:column;align-items:center;gap:3px;
+  cursor:pointer;border-top:3px solid transparent;transition:all .15s;}
+.bot-btn .bi{font-size:20px;}
+.bot-btn .bl{font-size:10px;font-weight:800;color:#AAB4D4;}
+
+/* ═══ PORTAL CARDS ═══════════════════════════════════════════════════════════*/
+.pcard{background:white;border-radius:20px;padding:16px;margin-bottom:14px;
+  box-shadow:0 4px 14px rgba(0,0,0,.07);transition:transform .14s;}
+.pcard:hover{transform:translateY(-2px);}
+.pcard-title{color:#3A4080;font-size:15px;font-weight:800;margin-bottom:12px;}
+.two-stat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.sbox{background:white;border-radius:20px;padding:16px;text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.07);}
+.sbox-icon{font-size:26px;margin-bottom:5px;}
+.sbox-val{font-size:24px;font-weight:900;line-height:1;}
+.sbox-lbl{color:#7B8CC4;font-size:12px;font-weight:600;margin-top:3px;}
+.detail-row{display:flex;justify-content:space-between;align-items:flex-start;
+  padding:8px 0;border-bottom:1px solid #F0F4FF;font-size:13px;}
+.dk{color:#94A3B8;font-weight:700;flex-shrink:0;margin-right:8px;}
+.dv{color:#1E293B;font-weight:800;text-align:right;word-break:break-word;max-width:65%;}
+.date-bar{color:#7B8CC4;font-size:12px;font-weight:600;text-align:center;margin:16px 0 13px;}
+.section-title{font-size:20px;font-weight:900;color:#3A4080;margin:16px 0 13px;}
+
+/* ═══ GRADES ══════════════════════════════════════════════════════════════════*/
+.grade-summary{background:white;border-radius:20px;padding:13px 16px;margin-bottom:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.07);display:flex;justify-content:space-around;text-align:center;}
+.gs-val{font-size:19px;font-weight:900;line-height:1;}
+.gs-lbl{font-size:11px;color:#94A3B8;font-weight:700;}
+.grade-item{background:white;border-radius:18px;padding:14px 16px;margin-bottom:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);display:flex;align-items:center;gap:12px;}
+.grade-icon{font-size:24px;min-width:32px;text-align:center;}
+.grade-bar-track{background:#F0F4FF;border-radius:20px;height:7px;overflow:hidden;margin:5px 0;}
+.grade-bar-fill{height:100%;border-radius:20px;transition:width .6s;}
+.grade-meta{font-size:11px;color:#94A3B8;font-weight:600;margin-top:3px;}
+.grade-badge{text-align:right;flex-shrink:0;}
+.grade-letter{font-size:19px;font-weight:900;line-height:1;}
+.grade-score{font-size:11px;color:#94A3B8;font-weight:600;}
+.grade-remark{font-size:10px;font-weight:700;}
+
+/* ═══ HOMEWORK ═══════════════════════════════════════════════════════════════*/
+.hw-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;}
+.hw-count{font-size:13px;font-weight:800;border-radius:20px;padding:4px 12px;}
+.hw-item{background:white;border:2px solid #E8EDFF;border-radius:18px;
+  padding:13px 15px;margin-bottom:10px;display:flex;align-items:flex-start;
+  gap:12px;cursor:pointer;transition:all .15s;}
+.hw-item.done{background:#F0FFF4;border-color:#16A34A;}
+.hw-check{width:24px;height:24px;border-radius:9px;background:#E8EDFF;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;margin-top:2px;color:white;font-weight:900;
+  transition:background .15s;}
+.hw-item.done .hw-check{background:#16A34A;}
+.hw-subj{font-weight:800;font-size:14px;}
+.hw-task{font-size:12px;color:#64748B;margin-top:3px;}
+.hw-item.done .hw-task{text-decoration:line-through;color:#16A34A;}
+.hw-due{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;flex-shrink:0;}
+.hw-tip{text-align:center;color:#C5CEF0;font-size:12px;margin-top:6px;}
+
+/* ═══ REPORTS ════════════════════════════════════════════════════════════════*/
+.rpt-item{background:white;border-radius:20px;padding:15px 17px;margin-bottom:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.07);display:flex;align-items:center;gap:13px;}
+.rpt-icon{font-size:40px;flex-shrink:0;}
+.rpt-term{font-weight:800;font-size:15px;color:#1E293B;}
+.rpt-meta{font-size:13px;color:#94A3B8;font-weight:600;margin-top:1px;}
+.rpt-pos{font-size:12px;font-weight:700;margin-top:3px;color:#6366F1;}
+.btn-view{border-radius:12px;padding:9px 14px;font-weight:800;font-size:13px;}
+
+/* ═══ MODAL ══════════════════════════════════════════════════════════════════*/
+.overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.88);z-index:500;
+  display:none;align-items:center;justify-content:center;padding:12px;}
+.overlay.on{display:flex;}
+.modal-box{background:white;border-radius:22px;overflow:hidden;
+  max-width:780px;width:100%;max-height:95vh;display:flex;flex-direction:column;
+  box-shadow:0 24px 60px rgba(0,0,0,.5);animation:fadein .25s ease;}
+.modal-hdr{padding:14px 18px;display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid #E2E8F0;flex-wrap:wrap;gap:10px;flex-shrink:0;}
+.modal-title{font-weight:800;font-size:15px;color:#1E293B;}
+.modal-sub{font-size:12px;color:#94A3B8;}
+.modal-acts{display:flex;gap:8px;flex-wrap:wrap;}
+.modal-body{flex:1;overflow:auto;padding:16px;background:#F8FAFC;display:flex;justify-content:center;}
+.smodal{background:white;border-radius:22px;width:100%;max-width:440px;
+  padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.5);
+  max-height:90vh;overflow-y:auto;animation:fadein .25s ease;}
+.smodal-title{font-size:19px;font-weight:800;color:#1E293B;margin-bottom:2px;}
+.smodal-sub{font-size:13px;color:#94A3B8;margin-bottom:22px;}
+.smodal-field{margin-bottom:12px;}
+.smodal-label{font-size:11px;font-weight:800;color:#64748B;
+  letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:5px;}
+.smodal-ew{position:relative;}
+.smodal-ew input{padding-right:42px;}
+.smodal-eye{position:absolute;right:11px;top:50%;transform:translateY(-50%);
+  background:none;border:none;cursor:pointer;font-size:16px;color:#94A3B8;padding:4px;}
+.smodal-err{background:#FEE2E2;border-radius:10px;padding:10px 14px;
+  color:#DC2626;font-size:13px;font-weight:700;margin-bottom:14px;}
+.smodal-info{background:#EEF2FF;border-radius:12px;padding:12px 15px;
+  display:flex;gap:10px;align-items:flex-start;margin-top:14px;}
+.smodal-info-text{font-size:12px;color:#4338CA;font-weight:600;line-height:1.5;}
+.pw-strength-track2{background:#F0F4FF;border-radius:20px;height:5px;overflow:hidden;margin:6px 0 3px;}
+.pw-strength-fill2{height:100%;border-radius:20px;transition:width .3s,background .3s;}
+.pw-strength-lbl2{font-size:11px;font-weight:700;margin-bottom:8px;}
+
+/* ═══ MANAGE CLASSES & SUBJECTS ═══════════════════════════════════════════════*/
+.mg-modal{padding-top:0;overflow:hidden;}
+.mg-hero{background:linear-gradient(135deg,#6366F1,#8B5CF6 55%,#EC4899);
+  margin:-28px -28px 18px;padding:22px 28px 20px;border-radius:20px 20px 0 0;text-align:center;color:white;position:relative;overflow:hidden;}
+.mg-hero::before{content:"";position:absolute;top:-40%;right:-15%;width:160px;height:160px;
+  background:rgba(255,255,255,.13);border-radius:50%;}
+.mg-hero::after{content:"";position:absolute;bottom:-50%;left:-10%;width:120px;height:120px;
+  background:rgba(255,255,255,.1);border-radius:50%;}
+.mg-hero-icon{font-size:34px;margin-bottom:4px;filter:drop-shadow(0 3px 6px rgba(0,0,0,.15));position:relative;}
+.mg-hero .smodal-title{color:white;position:relative;}
+.mg-hero .smodal-sub{color:rgba(255,255,255,.85);position:relative;}
+.mg-section-lbl{font-size:12px;font-weight:800;color:#64748B;letter-spacing:.4px;
+  text-transform:uppercase;margin-bottom:9px;display:flex;align-items:center;gap:6px;}
+.mg-count{background:#EEF2FF;color:#4338CA;font-size:10px;font-weight:900;border-radius:20px;
+  padding:2px 8px;letter-spacing:0;text-transform:none;}
+.mg-chip-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;min-height:8px;}
+.mg-chip{display:flex;align-items:center;gap:6px;background:white;border:1.5px solid #E2E8F0;
+  border-radius:20px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#334155;
+  box-shadow:0 1px 4px rgba(0,0,0,.05);transition:transform .15s,box-shadow .15s;}
+.mg-chip:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(0,0,0,.09);}
+.mg-chip-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;box-shadow:0 0 0 3px rgba(0,0,0,.04);}
+.mg-chip-icon{font-size:14px;line-height:1;}
+.mg-chip-del{background:none;border:none;color:#CBD5E1;font-size:14px;line-height:1;
+  cursor:pointer;padding:2px 3px;border-radius:6px;transition:.15s;}
+.mg-chip-del:hover{color:#EF4444;background:#FEE2E2;transform:scale(1.15);}
+.mg-chip-new{animation:mgPop .4s cubic-bezier(.34,1.56,.64,1);}
+@keyframes mgPop{0%{transform:scale(0.4);opacity:0;}60%{transform:scale(1.08);opacity:1;}100%{transform:scale(1);}}
+.mg-add-card{background:linear-gradient(180deg,#F8FAFC,#F1F5F9);border:1.5px dashed #CBD5E1;
+  border-radius:16px;padding:14px;margin-bottom:6px;}
+.mg-preview-row{margin-bottom:10px;}
+.mg-preview-chip{display:inline-flex;align-items:center;gap:7px;background:white;border:1.5px solid #E2E8F0;
+  border-radius:20px;padding:7px 14px 7px 12px;font-size:12.5px;font-weight:800;color:#94A3B8;
+  transition:color .15s;}
+.mg-add-row{display:flex;gap:8px;margin-bottom:10px;}
+.mg-add-btn{background:linear-gradient(135deg,#6366F1,#8B5CF6);color:white;border:none;border-radius:11px;
+  padding:0 18px;font-size:13px;font-weight:800;white-space:nowrap;cursor:pointer;
+  box-shadow:0 3px 10px rgba(99,102,241,.3);transition:transform .13s,box-shadow .13s;}
+.mg-add-btn:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(99,102,241,.4);}
+.mg-add-btn:active{transform:translateY(0) scale(.97);}
+.mg-swatch-lbl{font-size:11px;font-weight:700;color:#94A3B8;margin-bottom:7px;}
+.mg-swatch-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:2px;}
+.mg-swatch{width:30px;height:30px;border-radius:50%;cursor:pointer;border:3px solid white;
+  transition:transform .15s,box-shadow .15s;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.15);position:relative;}
+.mg-swatch:hover{transform:scale(1.15);}
+.mg-swatch.sel{transform:scale(1.18);box-shadow:0 0 0 2px white,0 0 0 4px #1E293B,0 3px 8px rgba(0,0,0,.25);}
+.mg-swatch.sel::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:white;font-size:13px;font-weight:900;text-shadow:0 1px 2px rgba(0,0,0,.3);}
+.mg-icon-btn{width:36px;height:36px;border-radius:11px;background:white;border:2px solid #E2E8F0;
+  font-size:18px;cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s;
+  display:flex;align-items:center;justify-content:center;padding:0;}
+.mg-icon-btn:hover{background:#EEF2FF;transform:translateY(-2px);box-shadow:0 4px 10px rgba(99,102,241,.2);}
+.mg-icon-btn.sel{border-color:#6366F1;background:linear-gradient(135deg,#EEF2FF,#F5F3FF);
+  transform:scale(1.1);box-shadow:0 0 0 3px rgba(99,102,241,.15);}
+
+/* ═══ REPORT CARD PRINT ══════════════════════════════════════════════════════*/
+.rc{background:white;border-radius:16px;padding:26px 28px;max-width:660px;width:100%;}
+.rc-hdr{text-align:center;padding-bottom:16px;margin-bottom:18px;}
+.rc-emoji{font-size:44px;margin-bottom:8px;}
+.rc-school{font-size:19px;font-weight:800;margin-bottom:2px;}
+.rc-loc{color:#64748B;font-size:12px;font-weight:600;margin-bottom:8px;}
+.rc-badge{display:inline-block;border-radius:10px;padding:5px 18px;font-weight:800;font-size:13px;}
+.rc-info{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  margin-bottom:18px;background:#F8FAFC;border-radius:12px;padding:12px 14px;}
+.rc-info-k{font-size:9px;color:#94A3B8;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px;}
+.rc-info-v{font-size:13px;font-weight:800;color:#1E293B;}
+.rc-table{width:100%;border-collapse:collapse;margin-bottom:12px;}
+.rc-table th{padding:7px 8px;font-size:10px;font-weight:800;text-align:left;border-bottom:2px solid;}
+.rc-table td{padding:6px 8px;font-size:11px;}
+.rc-table .alt{background:#F8FAFC;}
+.rc-avg-row td{padding:8px;}
+.rc-grade-chip{border-radius:7px;padding:2px 8px;font-weight:900;font-size:11px;}
+.rc-key{display:flex;gap:8px;flex-wrap:wrap;padding:7px 12px;background:#F8FAFC;border-radius:10px;margin-bottom:14px;}
+.rc-key-span{font-size:11px;font-weight:800;color:#64748B;}
+.rc-comments{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+@media(max-width:500px){.rc-comments{grid-template-columns:1fr;}}
+.rc-cbox{background:#F8FAFC;border-radius:11px;padding:12px 14px;border:1px solid #E2E8F0;}
+.rc-ck{font-size:9px;font-weight:800;color:#64748B;margin-bottom:5px;letter-spacing:.3px;text-transform:uppercase;}
+.rc-cv{font-size:12px;color:#1E293B;font-style:italic;line-height:1.5;}
+.rc-sig{margin-top:8px;border-top:1px solid #E2E8F0;padding-top:6px;font-size:10px;color:#94A3B8;}
+.rc-foot{text-align:center;font-size:10px;color:#CBD5E1;border-top:1px solid #F0F4FF;padding-top:10px;}
+
+/* ═══ MISC ════════════════════════════════════════════════════════════════════*/
+.notice-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #F0F4FF;}
+.notice-date{background:#F0F4FF;border-radius:9px;padding:3px 9px;
+  font-size:11px;font-weight:800;color:#7B8CC4;align-self:flex-start;flex-shrink:0;}
+.notice-title{font-weight:800;font-size:13px;color:#3A4080;margin-bottom:2px;}
+.notice-body{font-size:12px;color:#7B8CC4;}
+.badge-chip{background:#FEF3C7;border:2px solid #FCD34D;border-radius:20px;
+  padding:5px 14px;font-size:12px;font-weight:700;color:#92400E;
+  display:inline-block;margin:3px;}
+.id-note{background:#EEF2FF;border-radius:10px;padding:10px 14px;
+  font-size:12px;color:#4338CA;font-weight:600;margin-top:10px;line-height:1.5;}
+.id-ok{background:#DCFCE7;border-radius:9px;padding:8px 12px;
+  color:#16A34A;font-size:12px;font-weight:700;margin-top:8px;}
+.id-err{background:#FEE2E2;border-radius:9px;padding:8px 12px;
+  color:#DC2626;font-size:12px;font-weight:700;margin-top:8px;}
+.rpttab{display:flex;background:white;border-radius:16px;padding:5px;gap:5px;
+  box-shadow:0 2px 12px rgba(0,0,0,.07);margin-bottom:14px;}
+.rpttab-btn{flex:1;padding:11px 8px;border-radius:12px;border:none;
+  font-family:inherit;font-weight:800;font-size:13px;cursor:pointer;
+  background:transparent;color:#94A3B8;-webkit-transition:all .18s;transition:all .18s;}
+.rpttab-btn.active{background:#6366F1;color:white;}
+.rpt-attached-item{display:flex;align-items:center;gap:12px;padding:12px 14px;
+  background:#F8FAFC;border-radius:14px;margin-bottom:8px;}
+.form-wrap{max-width:720px;margin:0 auto;padding:20px 18px 110px;}
+
+@media print {
+  #splash,#toast,.topbar,.bot-nav,.form-footer,.overlay{display:none!important;}
+  body{background:white;}
+  .rc{box-shadow:none;border:1px solid #ddd;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ SPLASH ═══════════════════════════════════════════════════════════════-->
+<div id="splash">
+  <div class="sp-emoji">🏫</div>
+  <div class="sp-name">Namu Model Primary School</div>
+  <div class="sp-sub">Maiduguri · Pupil Portal</div>
+  <div class="sp-bar"><div class="sp-fill"></div></div>
+</div>
+
+<!-- ═══ TOAST ════════════════════════════════════════════════════════════════-->
+<div id="toast"></div>
+
+<!-- ═══ LOGIN PAGE ═══════════════════════════════════════════════════════════-->
+<div id="pg-login" class="on">
+  <div id="login-stars"></div>
+  <div class="login-card" id="login-card">
+    <div class="login-logo">🏫</div>
+    <div class="login-school">Namu Model Primary School</div>
+    <div class="login-loc">Maiduguri · Portal</div>
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="tab-pupil" onclick="setMode('pupil')">👤 Pupil</button>
+      <button class="mode-tab" id="tab-admin" onclick="setMode('admin')">🔐 Admin</button>
+    </div>
+    <!-- Pupil section -->
+    <div id="pupil-section">
+      <div class="login-label">Pupil ID</div>
+      <input id="login-id" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" placeholder="e.g. NMPS/P4B/001"
+        oninput="this.value=this.value.toUpperCase()" onkeydown="if(event.key==='Enter')doPupilLogin()"/>
+      <div class="login-label" style="margin-top:4px">Password</div>
+      <div class="eye-wrap">
+        <input id="login-pw" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="Enter your password"
+          onkeydown="if(event.key==='Enter')doPupilLogin()"/>
+        <button class="eye-btn" onclick="toggleEye('login-pw',this)">👁️</button>
+      </div>
+      <div class="login-hint">First time? Enter your ID — you will be asked to create a password.</div>
+      <button class="btn-gold btn-sm" onclick="doPupilLogin()" style="width:100%">🚀 Sign In</button>
+      <div class="forgot-link" onclick="openForgotPupil()">Forgot password?</div>
+    </div>
+    <!-- Admin section -->
+    <div id="admin-section" style="display:none">
+      <div id="admin-login-fields">
+        <div class="login-label">Admin PIN</div>
+        <div class="eye-wrap">
+          <input id="login-pin" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="• • • •"
+            style="text-align:center;letter-spacing:10px;font-size:22px"
+            onkeydown="if(event.key==='Enter')doAdminLogin()"/>
+          <button class="eye-btn" onclick="toggleEye('login-pin',this)">👁️</button>
+        </div>
+        <button class="btn-purple btn-sm" onclick="doAdminLogin()" style="width:100%">🔐 Enter Admin Panel</button>
+        <div class="forgot-link" onclick="openForgotAdmin()">Forgot PIN?</div>
+      </div>
+      <div id="admin-setup-fields" style="display:none">
+        <div class="login-hint" style="margin-bottom:12px;text-align:center">🔒 For security, please set your own Admin PIN before continuing.</div>
+        <div class="login-label">New Admin PIN</div>
+        <div class="eye-wrap">
+          <input id="admsetup-pin1" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="Min 4 digits"
+            style="text-align:center;letter-spacing:8px;font-size:20px"/>
+          <button class="eye-btn" onclick="toggleEye('admsetup-pin1',this)">👁️</button>
+        </div>
+        <div class="login-label" style="margin-top:4px">Confirm PIN</div>
+        <div class="eye-wrap">
+          <input id="admsetup-pin2" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="Re-enter PIN"
+            style="text-align:center;letter-spacing:8px;font-size:20px" onkeydown="if(event.key==='Enter')doCreateAdminPin()"/>
+          <button class="eye-btn" onclick="toggleEye('admsetup-pin2',this)">👁️</button>
+        </div>
+        <button class="btn-purple btn-sm" onclick="doCreateAdminPin()" style="width:100%">🔐 Create Admin PIN</button>
+        <button onclick="setMode('admin')" style="width:100%;margin-top:10px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.45);border-radius:12px;padding:11px;font-size:13px;font-weight:700">← Back</button>
+      </div>
+    </div>
+    <div id="login-err" class="login-error" style="display:none"></div>
+  </div>
+</div>
+
+<!-- ═══ SETUP PAGE (create password) ════════════════════════════════════════-->
+<div id="pg-setup">
+  <div id="setup-stars"></div>
+  <div class="setup-card">
+    <div id="setup-av" class="setup-avatar-ring"></div>
+    <div class="setup-welcome" id="setup-welcome">Welcome!</div>
+    <div class="setup-sub" id="setup-sub">You are logging in for the first time.<br>Please create your personal password.</div>
+    <div class="setup-idbar">
+      <div><div class="setup-idbar-key">Pupil ID</div><div class="setup-idbar-val" id="setup-id-display"></div></div>
+      <div style="text-align:right"><div class="setup-idbar-key">Class</div><div class="setup-idbar-cls" id="setup-cls-display"></div></div>
+    </div>
+    <div class="login-label" id="setup-label">Create Password</div>
+    <div class="eye-wrap" style="margin-bottom:8px">
+      <input id="setup-pw1" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="Choose a strong password (min 6 chars)"
+        oninput="updatePwStrength()" style="margin-bottom:0"/>
+      <button class="eye-btn" onclick="toggleEye('setup-pw1',this)">👁️</button>
+    </div>
+    <div class="pw-strength-track">
+      <div class="pw-strength-fill" id="pw-str-fill" style="width:0;background:#E2E8F0"></div>
+    </div>
+    <div class="pw-strength-label" id="pw-str-label" style="color:#94A3B8"></div>
+    <div class="setup-tip">💡 Use uppercase letters, numbers and symbols for a stronger password.</div>
+    <div class="login-label">Confirm Password</div>
+    <div class="eye-wrap" style="margin-bottom:6px">
+      <input id="setup-pw2" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="login-input" type="password" placeholder="Re-enter your password"
+        oninput="checkMatch()" onkeydown="if(event.key==='Enter')doCreatePw()" style="margin-bottom:0"/>
+      <button class="eye-btn" onclick="toggleEye('setup-pw2',this)">👁️</button>
+    </div>
+    <div id="setup-match" style="display:none;font-size:12px;font-weight:700;color:#22C55E;margin-bottom:10px">✓ Passwords match</div>
+    <div id="setup-mismatch" style="display:none;font-size:12px;font-weight:700;color:#EF4444;margin-bottom:10px">✗ Passwords do not match</div>
+    <div id="setup-err" class="setup-error" style="display:none"></div>
+    <button class="btn-gold btn-sm" id="setup-submit-btn" onclick="doCreatePw()" style="width:100%;margin-bottom:10px">🔒 Create My Password</button>
+    <button onclick="goLogin()" style="width:100%;background:rgba(255,255,255,.07);color:rgba(255,255,255,.45);border-radius:12px;padding:11px;font-size:13px;font-weight:700">← Back to Login</button>
+  </div>
+</div>
+
+<!-- ═══ ADMIN PAGE ════════════════════════════════════════════════════════════-->
+<div id="pg-admin" class="page">
+  <div class="topbar">
+    <div>
+      <div class="topbar-title">Namu Model Primary School</div>
+      <div class="topbar-sub">ADMIN PANEL · MAIDUGURI</div>
+    </div>
+    <div class="topbar-actions">
+      <span id="sync-badge" class="sync-badge sync-local">💾 Local only</span>
+      <button class="tb-btn gold" onclick="openAddPupil()">+ Add Pupil</button>
+      <button class="tb-btn" onclick="openManage()">🏫 Classes & Subjects</button>
+      <button class="tb-btn" onclick="openSettings()">⚙️ Settings</button>
+      <button class="tb-btn" onclick="exportDB()">⬇️ Backup</button>
+      <label class="tb-btn" style="cursor:pointer">⬆️ Restore<input type="file" accept=".json" onchange="importDB(event)" style="display:none"/></label>
+      <button class="tb-btn" onclick="resetAllPw()" title="Reset every pupil's password to the default">🔓 Reset All Passwords</button>
+      <button class="tb-btn" onclick="doLogout()">Logout</button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="stat-grid" id="admin-stats"></div>
+    <div class="filters">
+      <input class="fi" style="flex:1;min-width:160px" placeholder="🔍 Search by name or ID…" oninput="STATE.search=this.value;STATE.adminPage=1;renderAdminList()" id="search-inp"/>
+      <select class="fi" style="max-width:210px" onchange="STATE.filterClass=this.value;STATE.adminPage=1;renderAdminList()" id="class-filter">
+        <option value="All">All Classes</option>
+      </select>
+    </div>
+    <div class="list-box" id="admin-list"></div>
+    <div class="pager" id="admin-pager"></div>
+  </div>
+</div>
+
+<!-- ═══ ADD/EDIT PUPIL PAGE ══════════════════════════════════════════════════-->
+<div id="pg-form" class="page">
+  <div class="topbar" id="form-topbar">
+    <div>
+      <div class="topbar-title" id="form-title">Add New Pupil</div>
+      <div class="topbar-sub">Namu Model Primary School</div>
+    </div>
+    <div class="topbar-actions">
+      <button class="tb-btn" onclick="closeForm()">← Back</button>
+      <div id="form-id-display" style="background:rgba(255,255,255,.12);border-radius:10px;padding:6px 13px;color:rgba(255,255,255,.5);font-size:13px;display:none">
+        ID: <span id="form-id-badge" style="color:#FFD700;font-family:monospace;font-weight:900"></span>
+      </div>
+    </div>
+  </div>
+  <div class="step-tabs">
+    <button class="step-tab active" id="stab0" onclick="goStep(0)">📋 Info</button>
+    <button class="step-tab" id="stab1" onclick="goStep(1)">📊 Grades</button>
+    <button class="step-tab" id="stab2" onclick="goStep(2)">📄 Reports</button>
+  </div>
+  <div class="form-wrap" id="form-body"></div>
+  <div class="form-footer" id="form-footer"></div>
+</div>
+
+<!-- ═══ PUPIL PORTAL PAGE ════════════════════════════════════════════════════-->
+<div id="pg-portal" class="page">
+  <div id="portal-header" class="pupil-hdr">
+    <div class="pupil-hdr-inner">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="pupil-av" id="p-av"></div>
+        <div>
+          <div class="pupil-name-hdr" id="p-name"></div>
+          <div class="pupil-cls-hdr" id="p-cls"></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:7px;align-items:center">
+        <span id="sync-badge-p" class="sync-badge sync-local" style="display:none"></span>
+        <button class="hdr-btn" onclick="openChangePw()" title="Change password">🔑</button>
+        <button class="hdr-btn" onclick="doLogout()">Logout</button>
+      </div>
+    </div>
+  </div>
+  <div class="pcontent" id="portal-content"></div>
+  <div class="bot-nav" id="portal-nav"></div>
+</div>
+
+<!-- ═══ SETTINGS MODAL ══════════════════════════════════════════════════════-->
+<div id="overlay-settings" class="overlay">
+  <div class="smodal">
+    <div class="smodal-title">⚙️ Admin Settings</div>
+    <div class="smodal-sub">Change your admin login PIN</div>
+    <div class="smodal-field">
+      <label class="smodal-label">Current PIN</label>
+      <div class="smodal-ew"><input id="set-cur" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Enter current PIN"/><button class="smodal-eye" onclick="toggleEye('set-cur',this)">👁️</button></div>
+    </div>
+    <div class="smodal-field">
+      <label class="smodal-label">New PIN</label>
+      <div class="smodal-ew"><input id="set-new" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Min 4 characters"/><button class="smodal-eye" onclick="toggleEye('set-new',this)">👁️</button></div>
+    </div>
+    <div class="smodal-field">
+      <label class="smodal-label">Confirm New PIN</label>
+      <div class="smodal-ew"><input id="set-new2" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Re-enter new PIN" onkeydown="if(event.key==='Enter')doChangePin()"/><button class="smodal-eye" onclick="toggleEye('set-new2',this)">👁️</button></div>
+    </div>
+    <div id="set-err" class="smodal-err" style="display:none"></div>
+    <button class="btn-purple btn-sm" onclick="doChangePin()" style="width:100%;margin-bottom:0">🔐 Update PIN</button>
+    <div class="smodal-sub" style="margin-top:18px">Recovery email (used for "Forgot PIN?")</div>
+    <div class="smodal-field">
+      <label class="smodal-label">Admin Email</label>
+      <input id="set-admin-email" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="email" placeholder="admin@example.com"/>
+    </div>
+    <button class="btn-purple btn-sm" onclick="doSaveAdminEmail()" style="width:100%;margin-bottom:0;background:#334155">💾 Save Recovery Email</button>
+    <div class="smodal-info"><span style="font-size:16px">ℹ️</span><div class="smodal-info-text">Keep your PIN safe. Use Backup regularly to save all school data.</div></div>
+    <button onclick="closeModal('overlay-settings')" style="width:100%;margin-top:12px;background:#F1F5F9;color:#64748B;border-radius:11px;padding:10px;font-size:13px;font-weight:700">Close</button>
+  </div>
+</div>
+
+<!-- ═══ FORGOT PASSWORD / PIN MODAL ═════════════════════════════════════════-->
+<div id="overlay-forgot" class="overlay">
+  <div class="smodal" id="forgot-modal">
+    <div class="smodal-title" id="forgot-title">🔑 Forgot Password</div>
+    <div class="smodal-sub" id="forgot-sub">Enter your details to recover access.</div>
+    <div class="smodal-field" id="forgot-id-field">
+      <label class="smodal-label" id="forgot-id-label">Pupil ID</label>
+      <input id="forgot-id" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" placeholder="e.g. NMPS/P4B/001" oninput="this.value=this.value.toUpperCase()"/>
+    </div>
+    <div class="smodal-field">
+      <label class="smodal-label" id="forgot-email-label">Registered Email</label>
+      <input id="forgot-email" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="email" placeholder="you@example.com" onkeydown="if(event.key==='Enter')doForgotSubmit()"/>
+    </div>
+    <div id="forgot-err" class="smodal-err" style="display:none"></div>
+    <button class="btn-purple btn-sm" onclick="doForgotSubmit()" style="width:100%;margin-bottom:0">📩 Send Reset Email</button>
+    <button onclick="closeModal('overlay-forgot')" style="width:100%;margin-top:12px;background:#F1F5F9;color:#64748B;border-radius:11px;padding:10px;font-size:13px;font-weight:700">Cancel</button>
+  </div>
+</div>
+
+<!-- ═══ SIMULATED EMAIL PREVIEW MODAL ═══════════════════════════════════════-->
+<div id="overlay-femail" class="overlay">
+  <div class="femail-wrap">
+    <div class="femail-bar">📧 Simulated Email <span style="margin-left:auto;font-weight:400;opacity:.6;font-size:11px">(no mail server connected)</span></div>
+    <div class="femail-body">
+      <div class="femail-envelope">
+        <div class="femail-head">
+          To: <b id="fe-to">—</b><br/>
+          From: <b>no-reply@namumodelprimary.school</b><br/>
+          Subject: <b id="fe-subject">—</b>
+        </div>
+        <div class="femail-content" id="fe-content"></div>
+      </div>
+      <div class="femail-note">ℹ️ This app runs fully offline with no backend server, so it cannot actually deliver emails yet. This preview shows exactly what the email would contain. To send real emails once hosted, connect an email service (e.g. EmailJS, or a Firebase Cloud Function with SendGrid) — ask if you'd like this wired up.</div>
+      <button class="btn-gold btn-sm" onclick="closeFemail()" style="width:100%;margin-top:16px">Got it</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MANAGE CLASSES & SUBJECTS MODAL ═════════════════════════════════════-->
+<div id="overlay-manage" class="overlay">
+  <div class="smodal mg-modal" style="max-width:500px;max-height:90vh;display:flex;flex-direction:column;">
+    <div class="mg-hero">
+      <div class="mg-hero-icon">🏫</div>
+      <div class="smodal-title" style="margin:0">Classes &amp; Subjects</div>
+      <div class="smodal-sub" style="margin:2px 0 0">Build the exact structure of your school</div>
+    </div>
+    <div style="overflow-y:auto;flex:1;margin:0 -6px;padding:2px 6px 0;">
+
+      <div class="mg-section-lbl">📘 Classes <span class="mg-count" id="mg-class-count"></span></div>
+      <div class="mg-chip-list" id="mg-class-list"></div>
+
+      <div class="mg-add-card">
+        <div class="mg-preview-row">
+          <div class="mg-preview-chip" id="mg-class-preview"><span class="mg-chip-dot" style="background:#6366F1"></span>New class</div>
+        </div>
+        <div class="mg-add-row">
+          <input id="mg-class-name" class="finp" style="flex:1" placeholder="e.g. Primary 6 Gold" maxlength="30" oninput="updateMgPreview()" onkeydown="if(event.key==='Enter')addClass()"/>
+          <button class="mg-add-btn" onclick="addClass()">+ Add Class</button>
+        </div>
+        <div class="mg-swatch-lbl">Pick a colour</div>
+        <div class="mg-swatch-row" id="mg-class-swatches"></div>
+      </div>
+
+      <div class="mg-section-lbl" style="margin-top:24px">📗 Subjects <span class="mg-count" id="mg-subject-count"></span></div>
+      <div class="mg-chip-list" id="mg-subject-list"></div>
+
+      <div class="mg-add-card">
+        <div class="mg-preview-row">
+          <div class="mg-preview-chip" id="mg-subject-preview"><span class="mg-chip-icon">📚</span>New subject</div>
+        </div>
+        <div class="mg-add-row">
+          <input id="mg-subject-name" class="finp" style="flex:1" placeholder="e.g. Music" maxlength="40" oninput="updateMgPreview()" onkeydown="if(event.key==='Enter')addSubject()"/>
+          <button class="mg-add-btn" onclick="addSubject()">+ Add Subject</button>
+        </div>
+        <div class="mg-swatch-lbl">Pick an icon</div>
+        <div class="mg-swatch-row" id="mg-subject-icons"></div>
+      </div>
+
+    </div>
+    <div id="mg-err" class="smodal-err" style="display:none;margin-top:12px"></div>
+    <button onclick="closeModal('overlay-manage')" style="width:100%;margin-top:14px;background:#F1F5F9;color:#64748B;border-radius:11px;padding:10px;font-size:13px;font-weight:700;flex-shrink:0">Close</button>
+  </div>
+</div>
+
+<!-- ═══ CHANGE PASSWORD MODAL ════════════════════════════════════════════════-->
+<div id="overlay-changepw" class="overlay">
+  <div class="smodal">
+    <div class="smodal-title">🔑 Change Password</div>
+    <div class="smodal-sub">Update your personal portal password</div>
+    <div class="smodal-field">
+      <label class="smodal-label">Current Password</label>
+      <div class="smodal-ew"><input id="cpw-cur" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Enter current password"/><button class="smodal-eye" onclick="toggleEye('cpw-cur',this)">👁️</button></div>
+    </div>
+    <div class="smodal-field">
+      <label class="smodal-label">New Password</label>
+      <div class="smodal-ew"><input id="cpw-new" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Min 6 characters" oninput="updatePwStrength2()"/><button class="smodal-eye" onclick="toggleEye('cpw-new',this)">👁️</button></div>
+      <div class="pw-strength-track2"><div class="pw-strength-fill2" id="pw-str-fill2" style="width:0;background:#E2E8F0"></div></div>
+      <div class="pw-strength-lbl2" id="pw-str-lbl2" style="color:#94A3B8"></div>
+    </div>
+    <div class="smodal-field">
+      <label class="smodal-label">Confirm New Password</label>
+      <div class="smodal-ew"><input id="cpw-new2" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" class="finp" type="password" placeholder="Re-enter new password" onkeydown="if(event.key==='Enter')doChangePw()"/><button class="smodal-eye" onclick="toggleEye('cpw-new2',this)">👁️</button></div>
+    </div>
+    <div id="cpw-err" class="smodal-err" style="display:none"></div>
+    <button class="btn-purple btn-sm" onclick="doChangePw()" style="width:100%;margin-bottom:0">🔒 Update Password</button>
+    <button onclick="closeModal('overlay-changepw')" style="width:100%;margin-top:12px;background:#F1F5F9;color:#64748B;border-radius:11px;padding:10px;font-size:13px;font-weight:700">Close</button>
+  </div>
+</div>
+
+<!-- ═══ REPORT MODAL ══════════════════════════════════════════════════════════-->
+<div id="overlay-report" class="overlay">
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <div><div class="modal-title" id="rpt-modal-title"></div><div class="modal-sub" id="rpt-modal-sub"></div></div>
+      <div class="modal-acts" id="rpt-modal-acts"></div>
+    </div>
+    <div class="modal-body" id="rpt-modal-body"></div>
+  </div>
+</div>
+
+<!-- ═══ FIREBASE (CLOUD SYNC) — only activates once FIREBASE_CONFIG below is filled in ═══ -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script>
+'use strict';
+// ═══════════════════════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════════════════════
+const SCHOOL = "Namu Model Primary School";
+const LOCATION = "Maiduguri";
+const DB_KEY = "nmps_db_v6";
+const DEFAULT_PIN = "12345";
+const DEFAULT_PUPIL_PW = "12445678";
+const DEFAULT_CLASSES = [
+  "Primary 4 Blue","Primary 4 Green","Primary 4 Red","Primary 4 Yellow",
+  "Primary 5 Blue","Primary 5 Green","Primary 5 Red","Primary 5 Yellow","Primary 6"
+];
+const DEFAULT_CLASS_COLORS = {
+  "Primary 4 Blue":"#3B82F6","Primary 4 Green":"#22C55E","Primary 4 Red":"#EF4444",
+  "Primary 4 Yellow":"#CA8A04","Primary 5 Blue":"#6366F1","Primary 5 Green":"#10B981",
+  "Primary 5 Red":"#F97316","Primary 5 Yellow":"#D97706","Primary 6":"#8B5CF6"
+};
+const DEFAULT_SUBJECTS = [
+  "Mathematics","English Language","Basic Science and Technology","National Values",
+  "Religion","Pre Vocational Studies","History","French","Hand Writing","Hausa"
+];
+const DEFAULT_SUBICONS = {
+  "Mathematics":"➕","English Language":"📖","Basic Science and Technology":"🔬",
+  "National Values":"⚖️","Religion":"📿","Pre Vocational Studies":"🛠️",
+  "History":"🏛️","French":"🇫🇷","Hand Writing":"✍️","Hausa":"🗣️"
+};
+const CLASS_COLOR_PALETTE = ["#3B82F6","#22C55E","#EF4444","#CA8A04","#6366F1","#10B981",
+  "#F97316","#D97706","#8B5CF6","#EC4899","#14B8A6","#F43F5E","#0EA5E9","#84CC16"];
+const SUBJECT_ICON_PALETTE = ["📚","🔬","➕","📖","🎨","🌍","💻","⚖️","🛠️","🏛️",
+  "🗣️","✍️","🎵","⚽","🧮","🧪","📿","🇫🇷","🌱","🖌️","🧭","📐","🎭","🧬"];
+const TERMS = ["First Term","Second Term","Third Term"];
+const SESSIONS = ["2023/2024","2024/2025","2025/2026"];
+const AVATARS = ["🦋","🚀","🌺","🌻","🌿","🌹","⚡","🎓","🦁","🐬","🦅","🌟","🎯","🏆","👑"];
+
+// ═══════════════════════════════════════════════════════════════
+// DATABASE
+// ═══════════════════════════════════════════════════════════════
+let DB = { pupils:{}, adminPin:DEFAULT_PIN, settings:null };
+function ensureSettings(){
+  if(!DB.settings) DB.settings={};
+  if(!DB.settings.classes||!DB.settings.classes.length) DB.settings.classes=[...DEFAULT_CLASSES];
+  if(!DB.settings.classColors) DB.settings.classColors={...DEFAULT_CLASS_COLORS};
+  if(!DB.settings.subjects||!DB.settings.subjects.length) DB.settings.subjects=[...DEFAULT_SUBJECTS];
+  if(!DB.settings.subIcons) DB.settings.subIcons={...DEFAULT_SUBICONS};
+}
+function loadDB(){
+  try{
+    var d=localStorage.getItem(DB_KEY);
+    if(d){ DB=JSON.parse(d); if(!DB.adminPin) DB.adminPin=DEFAULT_PIN;
+      if(DB.adminPin==="1234") DB.adminPin=DEFAULT_PIN; /* migrate old default PIN → new default */
+    }
+  }catch(e){ console.warn('Storage unavailable',e); }
+  ensureSettings();
+}
+function saveDB(){
+  try{
+    const json=JSON.stringify(DB);
+    localStorage.setItem(DB_KEY,json);
+    const check=localStorage.getItem(DB_KEY);
+    if(check!==json){
+      if(typeof showToast==="function") showToast("⚠️ Storage isn't sticking on this device/browser — data may not be saved. Try hosting the file online instead of opening it directly.","error");
+    }
+  }
+  catch(e){ console.warn("Local save failed",e); if(typeof showToast==="function") showToast("⚠️ Could not save locally — your browser storage may be full or blocked.","error"); }
+  pushToCloud();
+}
+function getClasses(){ return DB.settings.classes; }
+function getClassColor(c){ return DB.settings.classColors[c]||DEFAULT_CLASS_COLORS[c]||"#6366F1"; }
+function getSubjects(){ return DB.settings.subjects; }
+function getSubIcon(s){ return DB.settings.subIcons[s]||DEFAULT_SUBICONS[s]||"📚"; }
+
+// ═══════════════════════════════════════════════════════════════
+// FIREBASE CLOUD SYNC
+// ─────────────────────────────────────────────────────────────
+// To turn this on so every device (admin + parents/pupils) shares
+// the SAME live data instead of separate per-device copies:
+//   1. Go to https://console.firebase.google.com → Add project (free)
+//   2. Build → Firestore Database → Create database (any region, "test mode" is fine to start)
+//   3. Project settings (gear icon) → General → "Your apps" → Add app → Web (</>) → copy the config object
+//   4. Paste your copied values into FIREBASE_CONFIG below, replacing the placeholders
+//   5. In Firestore → Rules, use (open access, matches this app's own PIN-based security model):
+//        rules_version = '2';
+//        service cloud.firestore {
+//          match /databases/{database}/documents {
+//            match /nmpsPortal/database { allow read, write: if true; }
+//          }
+//        }
+// Until FIREBASE_CONFIG is filled in, the portal keeps working exactly as before (local storage only).
+// ═══════════════════════════════════════════════════════════════
+const FIREBASE_CONFIG = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+let fbFirestore=null, fbDocRef=null, fbEnabled=false, fbApplyingRemote=false;
+function isFirebaseConfigured(){
+  return FIREBASE_CONFIG.apiKey && !FIREBASE_CONFIG.apiKey.startsWith("YOUR_") && typeof firebase!=="undefined";
+}
+function initFirebaseSync(){
+  if(!isFirebaseConfigured()){ setSyncStatus("local"); return; }
+  try{
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fbFirestore=firebase.firestore();
+    fbDocRef=fbFirestore.collection("nmpsPortal").doc("database");
+    fbEnabled=true;
+    setSyncStatus("connecting");
+    fbDocRef.onSnapshot(snap=>{
+      if(snap.metadata.hasPendingWrites){ setSyncStatus("synced"); return; }
+      if(snap.exists){
+        const remote=snap.data();
+        if(remote&&remote.json){
+          try{
+            const parsed=JSON.parse(remote.json);
+            if(JSON.stringify(parsed)!==JSON.stringify(DB)){
+              fbApplyingRemote=true;
+              DB=parsed; ensureSettings();
+              try{ localStorage.setItem(DB_KEY,remote.json); }catch(e){}
+              fbApplyingRemote=false;
+              rerenderCurrentView();
+            }
+          }catch(e){ console.warn("Bad cloud data",e); }
+        }
+      }else{
+        pushToCloud();
+      }
+      setSyncStatus("synced");
+    },err=>{
+      console.warn("Firebase sync error",err);
+      setSyncStatus("error");
+    });
+  }catch(e){
+    console.warn("Firebase init failed",e);
+    setSyncStatus("error");
+  }
+}
+function pushToCloud(){
+  if(!fbEnabled||fbApplyingRemote||!fbDocRef) return;
+  try{
+    fbDocRef.set({ json:JSON.stringify(DB), updatedAt:firebase.firestore.FieldValue.serverTimestamp() });
+  }catch(e){ console.warn("Cloud save failed",e); }
+}
+function setSyncStatus(state){
+  const map={
+    local:{txt:"💾 Local only",cls:"sync-local",show:false,title:"Data is saved only in this browser on this device. Set up Firebase (see code comments) for all devices to share the same live data."},
+    connecting:{txt:"☁️ Connecting…",cls:"sync-connecting",show:true,title:"Connecting to cloud storage…"},
+    synced:{txt:"☁️ Synced",cls:"sync-ok",show:true,title:"Every change is saved to the cloud instantly and shared across all devices."},
+    error:{txt:"⚠️ Sync error",cls:"sync-err",show:true,title:"Could not reach cloud storage right now. Your changes are still saved locally on this device and will sync once the connection is back."}
+  };
+  const s=map[state]||map.local;
+  [document.getElementById("sync-badge"),document.getElementById("sync-badge-p")].forEach(el=>{
+    if(!el) return;
+    el.textContent=s.txt;
+    el.className="sync-badge "+s.cls;
+    el.title=s.title;
+    if(el.id==="sync-badge-p") el.style.display=s.show?"inline-flex":"none";
+  });
+}
+function rerenderCurrentView(){
+  const active=document.querySelector("[id^='pg-'].on");
+  if(!active) return;
+  if(active.id==="pg-admin") renderAdmin();
+  else if(active.id==="pg-portal"&&STATE.pupilId) openPortal();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════
+let STATE = {
+  mode:"pupil", pupilId:null, portalTab:"home", formStep:0,
+  editingId:null, search:"", filterClass:"All", adminPage:1,
+  formData:null, formGrades:[], formReports:[], formRptMode:"upload",
+  hwDone:{}
+};
+const ADMIN_PAGE_SIZE=10;
+
+// ═══════════════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════════════
+function gradeFrom(s){
+  if(s>=75)return{grade:"A",remark:"Excellent"};
+  if(s>=60)return{grade:"B",remark:"Very Good"};
+  if(s>=50)return{grade:"C",remark:"Good"};
+  if(s>=40)return{grade:"D",remark:"Pass"};
+  return{grade:"F",remark:"Fail"};
+}
+function gradeCol(g){
+  return g==="A"?"#16A34A":g==="B"?"#2563EB":g==="C"?"#D97706":g==="D"?"#EA580C":"#DC2626";
+}
+function calcTotal(g){
+  return(parseFloat(g.ca1)||0)+(parseFloat(g.ca2)||0)+(parseFloat(g.ca3)||0)+(parseFloat(g.ca4)||0)+(parseFloat(g.exam)||0);
+}
+function pwStr(pw){
+  if(!pw)return{score:0,label:"",color:"#E2E8F0"};
+  let s=0;
+  if(pw.length>=6)s++; if(pw.length>=10)s++;
+  if(/[A-Z]/.test(pw))s++; if(/[0-9]/.test(pw))s++; if(/[^A-Za-z0-9]/.test(pw))s++;
+  if(s<=1)return{score:20,label:"Weak",color:"#EF4444"};
+  if(s===2)return{score:40,label:"Fair",color:"#F97316"};
+  if(s===3)return{score:65,label:"Good",color:"#EAB308"};
+  if(s===4)return{score:85,label:"Strong",color:"#22C55E"};
+  return{score:100,label:"Very Strong",color:"#16A34A"};
+}
+function showToast(msg,type="success"){
+  const t=document.getElementById("toast");
+  t.textContent=(type==="error"?"❌ ":"✅ ")+msg;
+  t.style.background=type==="error"?"#DC2626":"#16A34A";
+  t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),3200);
+}
+function toggleEye(id,btn){
+  const inp=document.getElementById(id);
+  const show=inp.type==="password"; inp.type=show?"text":"password"; btn.textContent=show?"🙈":"👁️";
+}
+function closeModal(id){ document.getElementById(id).classList.remove("on"); }
+function showPage(id){
+  document.querySelectorAll(".page,[id^='pg-']").forEach(p=>{
+    p.classList.remove("on"); if(p.id!=="pg-login"&&p.id!=="pg-setup") p.style.display="";
+  });
+  const pg=document.getElementById(id);
+  if(pg){ pg.classList.add("on"); if(id==="pg-login") pg.style.display="flex"; else if(id==="pg-setup") pg.style.display="flex"; }
+}
+function exportDB(){
+  const blob=new Blob([JSON.stringify(DB,null,2)],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob);
+  a.download="nmps-backup-"+(new Date().toISOString().slice(0,10))+".json"; a.click();
+}
+function importDB(e){
+  const f=e.target.files[0]; if(!f)return;
+  const r=new FileReader(); r.onload=ev=>{
+    try{ const d=JSON.parse(ev.target.result); if(d.pupils){Object.assign(DB,d);saveDB();renderAdmin();showToast("Data restored!");} }
+    catch(_){ showToast("Invalid backup file","error"); }
+  }; r.readAsText(f);
+}
+function pill(label,color,bg){
+  return `<span class="pill" style="background:${bg||(color+"22")};color:${color}">${label}</span>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// LOGIN
+// ═══════════════════════════════════════════════════════════════
+function setMode(m){
+  STATE.mode=m;
+  document.getElementById("pupil-section").style.display=m==="pupil"?"block":"none";
+  document.getElementById("admin-section").style.display=m==="admin"?"block":"none";
+  document.getElementById("tab-pupil").classList.toggle("active",m==="pupil");
+  document.getElementById("tab-admin").classList.toggle("active",m==="admin");
+  document.getElementById("login-err").style.display="none";
+  if(m==="admin"){
+    document.getElementById("admin-login-fields").style.display="block";
+    document.getElementById("admin-setup-fields").style.display="none";
+    document.getElementById("login-pin").value="";
+  }
+}
+function showLoginErr(msg){
+  const e=document.getElementById("login-err"); e.textContent=msg; e.style.display="block";
+}
+function doPupilLogin(){
+  const id=document.getElementById("login-id").value.trim().toUpperCase();
+  const pw=document.getElementById("login-pw").value;
+  if(!id){ showLoginErr("Please enter your Pupil ID."); return; }
+  const p=DB.pupils[id];
+  if(!p){ showLoginErr("Pupil ID not found. Ask your class teacher."); return; }
+  if(!p.password){
+    STATE.pupilId=id;
+    openSetup(id,false); return;
+  }
+  if(pw!==p.password){ showLoginErr("Incorrect password. Try again."); return; }
+  if(p.password===DEFAULT_PUPIL_PW){
+    STATE.pupilId=id;
+    openSetup(id,true); return;
+  }
+  STATE.pupilId=id;
+  openPortal();
+}
+function doAdminLogin(){
+  const pin=document.getElementById("login-pin").value;
+  const current=DB.adminPin||DEFAULT_PIN;
+  if(pin!==current){ showLoginErr("Incorrect PIN. Try again."); return; }
+  if(current===DEFAULT_PIN){
+    showAdminPinSetup(); return;
+  }
+  showPage("pg-admin"); renderAdmin();
+}
+function showAdminPinSetup(){
+  document.getElementById("admin-login-fields").style.display="none";
+  document.getElementById("admin-setup-fields").style.display="block";
+  document.getElementById("admsetup-pin1").value="";
+  document.getElementById("admsetup-pin2").value="";
+  document.getElementById("login-err").style.display="none";
+}
+function doCreateAdminPin(){
+  const p1=document.getElementById("admsetup-pin1").value;
+  const p2=document.getElementById("admsetup-pin2").value;
+  if(p1.length<4){ showLoginErr("⚠️ New PIN must be at least 4 digits."); return; }
+  if(p1!==p2){ showLoginErr("⚠️ PINs do not match."); return; }
+  if(p1===DEFAULT_PIN){ showLoginErr("⚠️ Please choose a PIN other than the default."); return; }
+  DB.adminPin=p1; saveDB();
+  document.getElementById("admin-setup-fields").style.display="none";
+  document.getElementById("admin-login-fields").style.display="block";
+  document.getElementById("login-pin").value="";
+  showToast("🎉 Admin PIN set! You're in.");
+  showPage("pg-admin"); renderAdmin();
+}
+// ═══════════════════════════════════════════════════════════════
+// FORGOT PASSWORD / FORGOT PIN (simulated email — no backend mail server)
+// ═══════════════════════════════════════════════════════════════
+let FORGOT_MODE=null;
+function openForgotPupil(){
+  FORGOT_MODE="pupil";
+  document.getElementById("forgot-title").textContent="🔑 Forgot Password";
+  document.getElementById("forgot-sub").textContent="Enter your Pupil ID and the parent/guardian email on file. We'll email a reset link to that address.";
+  document.getElementById("forgot-id-field").style.display="block";
+  document.getElementById("forgot-id-label").textContent="Pupil ID";
+  document.getElementById("forgot-id").placeholder="e.g. NMPS/P4B/001";
+  document.getElementById("forgot-email-label").textContent="Parent/Guardian Email";
+  document.getElementById("forgot-id").value="";
+  document.getElementById("forgot-email").value="";
+  document.getElementById("forgot-err").style.display="none";
+  document.getElementById("overlay-forgot").classList.add("on");
+}
+function openForgotAdmin(){
+  FORGOT_MODE="admin";
+  document.getElementById("forgot-title").textContent="🔑 Forgot Admin PIN";
+  document.getElementById("forgot-sub").textContent="Enter the registered admin recovery email. We'll email a temporary PIN to that address.";
+  document.getElementById("forgot-id-field").style.display="none";
+  document.getElementById("forgot-email-label").textContent="Admin Email";
+  document.getElementById("forgot-email").value="";
+  document.getElementById("forgot-err").style.display="none";
+  document.getElementById("overlay-forgot").classList.add("on");
+}
+function fgShowErr(msg){
+  const e=document.getElementById("forgot-err"); e.textContent=msg; e.style.display="block";
+}
+function doForgotSubmit(){
+  const email=document.getElementById("forgot-email").value.trim();
+  if(!email){ fgShowErr("Please enter an email address."); return; }
+  if(FORGOT_MODE==="pupil"){
+    const id=document.getElementById("forgot-id").value.trim().toUpperCase();
+    if(!id){ fgShowErr("Please enter your Pupil ID."); return; }
+    const p=DB.pupils[id];
+    if(!p){ fgShowErr("Pupil ID not found. Ask your class teacher."); return; }
+    if(!p.parentEmail || p.parentEmail.toLowerCase()!==email.toLowerCase()){
+      fgShowErr("That email doesn't match our records for this Pupil ID. Contact the school admin for help."); return;
+    }
+    p.password=DEFAULT_PUPIL_PW; saveDB();
+    closeModal("overlay-forgot");
+    showFemail({
+      to:email,
+      subject:`Password Reset — ${p.name} (${id})`,
+      html:`Hello,<br><br>A password reset was requested for <b>${p.name}</b> (Pupil ID: <b>${id}</b>) on the NMPS Portal.<br><br>Temporary password:<div class="femail-code">${DEFAULT_PUPIL_PW}</div>Log in with this temporary password — you'll be asked to create a new one right away.<br><br>Didn't request this? Please contact the school office.`
+    });
+  }else{
+    const adminEmail=(DB.settings.adminEmail||"").trim();
+    if(!adminEmail){ fgShowErr("No recovery email is on file yet. Ask a super-admin to set one in Settings."); return; }
+    if(adminEmail.toLowerCase()!==email.toLowerCase()){
+      fgShowErr("That email doesn't match our records."); return;
+    }
+    const tempPin=String(Math.floor(100000+Math.random()*900000));
+    DB.adminPin=tempPin; saveDB();
+    closeModal("overlay-forgot");
+    showFemail({
+      to:email,
+      subject:"Admin PIN Reset — NMPS Portal",
+      html:`Hello,<br><br>A PIN reset was requested for the NMPS Portal admin account.<br><br>Temporary PIN:<div class="femail-code">${tempPin}</div>Log in with this PIN, then go to <b>Settings</b> to set a permanent one immediately.<br><br>Didn't request this? Please secure your account right away.`
+    });
+  }
+}
+function showFemail({to,subject,html}){
+  document.getElementById("fe-to").textContent=to;
+  document.getElementById("fe-subject").textContent=subject;
+  document.getElementById("fe-content").innerHTML=html;
+  document.getElementById("overlay-femail").classList.add("on");
+}
+function closeFemail(){
+  document.getElementById("overlay-femail").classList.remove("on");
+}
+function goLogin(){
+  document.getElementById("login-id").value="";
+  document.getElementById("login-pw").value="";
+  document.getElementById("login-pin").value="";
+  document.getElementById("login-err").style.display="none";
+  showPage("pg-login");
+}
+function doLogout(){ goLogin(); }
+
+// ═══════════════════════════════════════════════════════════════
+// PASSWORD SETUP
+// ═══════════════════════════════════════════════════════════════
+function openSetup(id,forced){
+  const p=DB.pupils[id];
+  const col=getClassColor(p.class);
+  document.getElementById("setup-av").textContent=p.avatar||"🎓";
+  document.getElementById("setup-av").style.background=col+"33";
+  document.getElementById("setup-welcome").textContent="Welcome, "+(p.name.split(" ")[0])+"!";
+  document.getElementById("setup-sub").innerHTML=forced
+    ?"You're using the default password.<br>For your security, please set a new one now."
+    :"You are logging in for the first time.<br>Please create your personal password.";
+  document.getElementById("setup-label").textContent=forced?"New Password":"Create Password";
+  document.getElementById("setup-submit-btn").textContent=forced?"🔒 Update My Password":"🔒 Create My Password";
+  document.getElementById("setup-id-display").textContent=id;
+  document.getElementById("setup-cls-display").textContent=p.class;
+  document.getElementById("setup-pw1").value="";
+  document.getElementById("setup-pw2").value="";
+  document.getElementById("setup-err").style.display="none";
+  document.getElementById("setup-match").style.display="none";
+  document.getElementById("setup-mismatch").style.display="none";
+  document.getElementById("pw-str-fill").style.width="0";
+  document.getElementById("pw-str-label").textContent="";
+  // Add stars
+  const sc=document.getElementById("setup-stars"); sc.innerHTML="";
+  for(let i=0;i<14;i++){
+    const s=document.createElement("div"); s.className="star";
+    const sz=Math.random()*3+1.5; s.style.cssText=`width:${sz}px;height:${sz}px;top:${Math.random()*100}%;left:${Math.random()*100}%;animation-delay:${Math.random()*3}s;animation-duration:${Math.random()*2+1}s;`;
+    sc.appendChild(s);
+  }
+  showPage("pg-setup");
+}
+function updatePwStrength(){
+  const pw=document.getElementById("setup-pw1").value;
+  const str=pwStr(pw);
+  document.getElementById("pw-str-fill").style.width=str.score+"%";
+  document.getElementById("pw-str-fill").style.background=str.color;
+  document.getElementById("pw-str-label").textContent=str.label;
+  document.getElementById("pw-str-label").style.color=str.color;
+  checkMatch();
+}
+function checkMatch(){
+  const pw1=document.getElementById("setup-pw1").value;
+  const pw2=document.getElementById("setup-pw2").value;
+  if(!pw2){document.getElementById("setup-match").style.display="none";document.getElementById("setup-mismatch").style.display="none";return;}
+  document.getElementById("setup-match").style.display=pw1===pw2?"block":"none";
+  document.getElementById("setup-mismatch").style.display=pw1!==pw2?"block":"none";
+}
+function doCreatePw(){
+  const pw1=document.getElementById("setup-pw1").value;
+  const pw2=document.getElementById("setup-pw2").value;
+  const errEl=document.getElementById("setup-err");
+  if(pw1.length<6){errEl.textContent="⚠️ Password must be at least 6 characters.";errEl.style.display="block";return;}
+  if(pw1!==pw2){errEl.textContent="⚠️ Passwords do not match.";errEl.style.display="block";return;}
+  DB.pupils[STATE.pupilId].password=pw1; saveDB();
+  showToast("Password created! Welcome 🎉");
+  openPortal();
+}
+function updatePwStrength2(){
+  const pw=document.getElementById("cpw-new").value;
+  const str=pwStr(pw);
+  document.getElementById("pw-str-fill2").style.width=str.score+"%";
+  document.getElementById("pw-str-fill2").style.background=str.color;
+  document.getElementById("pw-str-lbl2").textContent=str.label;
+  document.getElementById("pw-str-lbl2").style.color=str.color;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ADMIN PANEL
+// ═══════════════════════════════════════════════════════════════
+function renderAdmin(){
+  renderAdminStats();
+  // populate class filter
+  const cf=document.getElementById("class-filter");
+  cf.innerHTML='<option value="All">All Classes</option>';
+  getClasses().forEach(c=>{ const o=document.createElement("option");o.value=c;o.textContent=c;cf.appendChild(o); });
+  if(STATE.filterClass!=="All"&&!getClasses().includes(STATE.filterClass))STATE.filterClass="All";
+  cf.value=STATE.filterClass;
+  document.getElementById("search-inp").value=STATE.search;
+  renderAdminList();
+}
+function renderAdminStats(){
+  const pupils=Object.values(DB.pupils);
+  const stats=[
+    {icon:"👨‍🎓",label:"Total Pupils",value:pupils.length,color:"#6366F1"},
+    {icon:"✅",label:"Password Changed",value:pupils.filter(p=>p.password&&p.password!==DEFAULT_PUPIL_PW).length,color:"#10B981"},
+    {icon:"📋",label:"Reports Filed",value:pupils.reduce((a,p)=>a+(p.reports?.length||0),0),color:"#F59E0B"},
+    {icon:"📊",label:"With Grades",value:pupils.filter(p=>p.grades?.length>0).length,color:"#EF4444"},
+  ];
+  document.getElementById("admin-stats").innerHTML=stats.map(s=>
+    `<div class="stat-card"><div class="stat-icon">${s.icon}</div><div><div class="stat-val" style="color:${s.color}">${s.value}</div><div class="stat-label">${s.label}</div></div></div>`
+  ).join("");
+}
+function renderAdminList(){
+  const container=document.getElementById("admin-list");
+  const pager=document.getElementById("admin-pager");
+  const entries=Object.entries(DB.pupils).filter(([id,p])=>{
+    const ms=p.name?.toLowerCase().includes(STATE.search.toLowerCase())||id.toLowerCase().includes(STATE.search.toLowerCase());
+    return ms&&(STATE.filterClass==="All"||p.class===STATE.filterClass);
+  });
+  if(!entries.length){
+    container.innerHTML=`<div class="empty-list"><div class="ei">📭</div><div class="et">No pupils registered yet</div><div class="es">Click "+ Add Pupil" to register the first student.</div></div>`;
+    pager.innerHTML="";
+    return;
+  }
+  const totalPages=Math.max(1,Math.ceil(entries.length/ADMIN_PAGE_SIZE));
+  if(STATE.adminPage>totalPages)STATE.adminPage=totalPages;
+  if(STATE.adminPage<1)STATE.adminPage=1;
+  const start=(STATE.adminPage-1)*ADMIN_PAGE_SIZE;
+  const pageEntries=entries.slice(start,start+ADMIN_PAGE_SIZE);
+  container.innerHTML=pageEntries.map(([id,p])=>{
+    const col=getClassColor(p.class);
+    const pills=[
+      pill(p.class,col),
+      !p.password?pill("⚠️ No password","#D97706","#FEF3C7"):
+        p.password===DEFAULT_PUPIL_PW?pill("🔑 Default password","#D97706","#FEF3C7"):pill("✅ Password changed","#16A34A"),
+      p.grades?.length?pill("📊 Grades","#2563EB"):"",
+      p.reports?.length?pill(`📋 ${p.reports.length}`,"#92400E","#FEF3C7"):"",
+    ].join(" ");
+    const resetBtn=p.password?`<button class="btn-rpw" onclick="resetPw('${id}')">🔓 Reset PW</button>`:"";
+    return `<div class="prow">
+      <div class="prow-icon" style="background:${col}22">${p.avatar||"🎓"}</div>
+      <div style="flex:1;min-width:0">
+        <div class="prow-name">${p.name}</div>
+        <div class="prow-meta"><span class="id-badge">${id}</span>${p.class} · ${p.teacher||"No teacher assigned"}</div>
+      </div>
+      <div class="prow-pills">${pills}</div>
+      <div class="prow-actions">
+        <button class="btn-edit" onclick="openEditPupil('${id}')">✏️ Edit</button>
+        ${resetBtn}
+        <button class="btn-del" onclick="deletePupil('${id}')">🗑️</button>
+      </div>
+    </div>`;
+  }).join("");
+  renderAdminPager(totalPages,entries.length,start,pageEntries.length);
+}
+function renderAdminPager(totalPages,totalCount,start,shownCount){
+  const pager=document.getElementById("admin-pager");
+  if(!pager)return;
+  if(totalPages<=1){
+    pager.innerHTML=`<div class="pager-info">Showing all ${totalCount} pupil${totalCount===1?"":"s"}</div>`;
+    return;
+  }
+  const cur=STATE.adminPage;
+  let nums="";
+  for(let n=1;n<=totalPages;n++){
+    if(n===1||n===totalPages||Math.abs(n-cur)<=1){
+      nums+=`<button class="pg-num${n===cur?" pg-cur":""}" onclick="goAdminPage(${n})">${n}</button>`;
+    }else if(n===2&&cur>3||n===totalPages-1&&cur<totalPages-2){
+      nums+=`<span class="pg-dots">…</span>`;
+    }
+  }
+  pager.innerHTML=`
+    <div class="pager-info">Showing ${start+1}–${start+shownCount} of ${totalCount}</div>
+    <div class="pager-nav">
+      <button class="pg-btn" ${cur===1?"disabled":""} onclick="goAdminPage(${cur-1})">‹ Prev</button>
+      ${nums}
+      <button class="pg-btn" ${cur===totalPages?"disabled":""} onclick="goAdminPage(${cur+1})">Next ›</button>
+    </div>`;
+}
+function goAdminPage(n){
+  STATE.adminPage=n;
+  renderAdminList();
+  document.getElementById("admin-list")?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function deletePupil(id){
+  if(!confirm(`Delete ${DB.pupils[id]?.name}? This cannot be undone.`))return;
+  delete DB.pupils[id]; saveDB(); renderAdmin(); showToast("Pupil deleted.");
+}
+function resetPw(id){
+  if(!confirm(`Reset password for ${DB.pupils[id]?.name}?\nThey will log in with the default password (${DEFAULT_PUPIL_PW}) and be asked to set a new one.`))return;
+  DB.pupils[id].password=DEFAULT_PUPIL_PW; saveDB(); renderAdmin(); showToast(`Password reset for ${DB.pupils[id]?.name}.`);
+}
+function resetAllPw(){
+  const count=Object.keys(DB.pupils).length;
+  if(!count){ showToast("No pupils registered yet."); return; }
+  if(!confirm(`Reset ALL ${count} pupils' passwords to the default (${DEFAULT_PUPIL_PW})?\nEvery pupil will be asked to set a new password on their next login. This cannot be undone.`))return;
+  Object.keys(DB.pupils).forEach(id=>{ DB.pupils[id].password=DEFAULT_PUPIL_PW; });
+  saveDB(); renderAdmin(); showToast(`🔓 All ${count} pupil passwords reset to default.`);
+}
+function openSettings(){
+  document.getElementById("set-cur").value="";
+  document.getElementById("set-new").value="";
+  document.getElementById("set-new2").value="";
+  document.getElementById("set-err").style.display="none";
+  document.getElementById("set-admin-email").value=DB.settings.adminEmail||"";
+  document.getElementById("overlay-settings").classList.add("on");
+}
+function doSaveAdminEmail(){
+  const email=document.getElementById("set-admin-email").value.trim();
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    document.getElementById("set-err").textContent="⚠️ Please enter a valid email address.";
+    document.getElementById("set-err").style.display="block";
+    return;
+  }
+  document.getElementById("set-err").style.display="none";
+  DB.settings.adminEmail=email; saveDB();
+  showToast(email?"📧 Recovery email saved!":"Recovery email cleared.");
+}
+function doChangePin(){
+  const cur=document.getElementById("set-cur").value;
+  const nw=document.getElementById("set-new").value;
+  const nw2=document.getElementById("set-new2").value;
+  const errEl=document.getElementById("set-err");
+  if(!cur){errEl.textContent="⚠️ Enter your current PIN.";errEl.style.display="block";return;}
+  if(cur!==(DB.adminPin||DEFAULT_PIN)){errEl.textContent="⚠️ Current PIN is incorrect.";errEl.style.display="block";return;}
+  if(nw.length<4){errEl.textContent="⚠️ New PIN must be at least 4 characters.";errEl.style.display="block";return;}
+  if(nw!==nw2){errEl.textContent="⚠️ New PINs do not match.";errEl.style.display="block";return;}
+  if(nw===DEFAULT_PIN){errEl.textContent="⚠️ Please choose a PIN other than the default.";errEl.style.display="block";return;}
+  DB.adminPin=nw; saveDB(); closeModal("overlay-settings"); showToast("Admin PIN updated!");
+}
+
+// ═══════════════════════════════════════════════════════════════
+// MANAGE CLASSES & SUBJECTS
+// ═══════════════════════════════════════════════════════════════
+let mgPickedColor=null, mgPickedIcon=null, mgLastAdded=null;
+function openManage(){
+  document.getElementById("mg-err").style.display="none";
+  document.getElementById("mg-class-name").value="";
+  document.getElementById("mg-subject-name").value="";
+  mgPickedColor=CLASS_COLOR_PALETTE[Math.floor(Math.random()*CLASS_COLOR_PALETTE.length)];
+  mgPickedIcon="📚";
+  mgLastAdded=null;
+  renderManageLists();
+  updateMgPreview();
+  document.getElementById("overlay-manage").classList.add("on");
+}
+function updateMgPreview(){
+  const cn=document.getElementById("mg-class-name")?.value.trim();
+  const cp=document.getElementById("mg-class-preview");
+  if(cp){
+    cp.innerHTML=`<span class="mg-chip-dot" style="background:${mgPickedColor||"#6366F1"}"></span>${cn||"New class"}`;
+    cp.style.color=cn?"#334155":"#94A3B8";
+  }
+  const sn=document.getElementById("mg-subject-name")?.value.trim();
+  const sp=document.getElementById("mg-subject-preview");
+  if(sp){
+    sp.innerHTML=`<span class="mg-chip-icon">${mgPickedIcon||"📚"}</span>${sn||"New subject"}`;
+    sp.style.color=sn?"#334155":"#94A3B8";
+  }
+}
+function renderManageLists(){
+  const classes=getClasses(), subjects=getSubjects();
+  document.getElementById("mg-class-count").textContent=classes.length;
+  document.getElementById("mg-subject-count").textContent=subjects.length;
+  document.getElementById("mg-class-list").innerHTML=classes.map(c=>`
+    <div class="mg-chip${c===mgLastAdded?" mg-chip-new":""}"><span class="mg-chip-dot" style="background:${getClassColor(c)}"></span>${c}
+      <button class="mg-chip-del" title="Remove class" onclick="deleteClass('${c.replace(/'/g,"\\'")}')">✕</button>
+    </div>`).join("");
+  document.getElementById("mg-subject-list").innerHTML=subjects.map(s=>`
+    <div class="mg-chip${s===mgLastAdded?" mg-chip-new":""}"><span class="mg-chip-icon">${getSubIcon(s)}</span>${s}
+      <button class="mg-chip-del" title="Remove subject" onclick="deleteSubject('${s.replace(/'/g,"\\'")}')">✕</button>
+    </div>`).join("");
+  document.getElementById("mg-class-swatches").innerHTML=CLASS_COLOR_PALETTE.map(hex=>
+    `<button type="button" class="mg-swatch${hex===mgPickedColor?" sel":""}" style="background:${hex}" onclick="pickMgColor('${hex}',this)"></button>`).join("");
+  document.getElementById("mg-subject-icons").innerHTML=SUBJECT_ICON_PALETTE.map(ic=>
+    `<button type="button" class="mg-icon-btn${ic===mgPickedIcon?" sel":""}" onclick="pickMgIcon('${ic}',this)">${ic}</button>`).join("");
+  mgLastAdded=null;
+}
+function pickMgColor(hex,el){
+  mgPickedColor=hex;
+  document.querySelectorAll("#mg-class-swatches .mg-swatch").forEach(b=>b.classList.remove("sel"));
+  el.classList.add("sel");
+  updateMgPreview();
+}
+function pickMgIcon(ic,el){
+  mgPickedIcon=ic;
+  document.querySelectorAll("#mg-subject-icons .mg-icon-btn").forEach(b=>b.classList.remove("sel"));
+  el.classList.add("sel");
+  updateMgPreview();
+}
+function mgShowErr(msg){
+  const e=document.getElementById("mg-err"); e.textContent=msg; e.style.display="block";
+  setTimeout(()=>{e.style.display="none";},3000);
+}
+function addClass(){
+  const inp=document.getElementById("mg-class-name");
+  const name=inp.value.trim();
+  if(!name){mgShowErr("⚠️ Enter a class name.");return;}
+  if(getClasses().some(c=>c.toLowerCase()===name.toLowerCase())){mgShowErr("⚠️ That class already exists.");return;}
+  DB.settings.classes.push(name);
+  DB.settings.classColors[name]=mgPickedColor||CLASS_COLOR_PALETTE[0];
+  saveDB(); inp.value=""; mgLastAdded=name; mgPickedColor=CLASS_COLOR_PALETTE[Math.floor(Math.random()*CLASS_COLOR_PALETTE.length)];
+  renderManageLists(); updateMgPreview(); refreshClassSelects(); showToast(`🎉 Class "${name}" added!`);
+}
+function deleteClass(name){
+  if(DB.settings.classes.length<=1){mgShowErr("⚠️ You must keep at least one class.");return;}
+  const inUse=Object.values(DB.pupils).some(p=>p.class===name);
+  if(inUse&&!confirm(`"${name}" is assigned to existing pupils. Remove it from the class list anyway? (Their records will keep the class name, it just won't be selectable for new pupils.)`))return;
+  DB.settings.classes=DB.settings.classes.filter(c=>c!==name);
+  saveDB(); renderManageLists(); refreshClassSelects(); showToast(`Class "${name}" removed.`);
+}
+function addSubject(){
+  const inp=document.getElementById("mg-subject-name");
+  const name=inp.value.trim();
+  if(!name){mgShowErr("⚠️ Enter a subject name.");return;}
+  if(getSubjects().some(s=>s.toLowerCase()===name.toLowerCase())){mgShowErr("⚠️ That subject already exists.");return;}
+  DB.settings.subjects.push(name);
+  DB.settings.subIcons[name]=mgPickedIcon||"📚";
+  saveDB(); inp.value=""; mgLastAdded=name; mgPickedIcon="📚";
+  renderManageLists(); updateMgPreview(); showToast(`🎉 Subject "${name}" added!`);
+}
+function deleteSubject(name){
+  if(DB.settings.subjects.length<=1){mgShowErr("⚠️ You must keep at least one subject.");return;}
+  const inUse=Object.values(DB.pupils).some(p=>p.grades?.some(g=>g.subject===name));
+  if(inUse&&!confirm(`"${name}" has recorded scores for existing pupils. Remove it from the subject list anyway? (Recorded scores are kept, it just won't be selectable for new entries.)`))return;
+  DB.settings.subjects=DB.settings.subjects.filter(s=>s!==name);
+  saveDB(); renderManageLists(); showToast(`Subject "${name}" removed.`);
+}
+function refreshClassSelects(){
+  if(document.getElementById("class-filter")) renderAdmin();
+  const fcls=document.getElementById("f-cls");
+  if(fcls) fcls.innerHTML=getClasses().map(c=>`<option${STATE.formData?.cls===c?" selected":""}>${c}</option>`).join("");
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PUPIL FORM
+// ═══════════════════════════════════════════════════════════════
+function initFormData(existing=null){
+  STATE.formGrades=getSubjects().map(s=>{
+    const f=existing?.grades?.find(g=>g.subject===s);
+    return{subject:s,icon:getSubIcon(s),ca1:f?String(f.ca1||""):"",ca2:f?String(f.ca2||""):"",ca3:f?String(f.ca3||""):"",ca4:f?String(f.ca4||""):"",exam:f?String(f.exam||""):""};
+  });
+  STATE.formReports=[...(existing?.reports||[])];
+  STATE.formData={
+    customId:"",
+    name:existing?.name||"",dob:existing?.dob||"",gender:existing?.gender||"Female",
+    cls:existing?.class||getClasses()[0],teacher:existing?.teacher||"",
+    avatar:existing?.avatar||"🎓",attendance:existing?.attendance||"",
+    address:existing?.address||"",parentName:existing?.parentName||"",
+    parentPhone:existing?.parentPhone||"",parentEmail:existing?.parentEmail||"",
+    badges:[...(existing?.badges||[])],
+    announcements:[...(existing?.announcements||[])],
+    homework:[...(existing?.homework||[])],
+    newHw:{subject:getSubjects()[0],task:"",due:"Tomorrow"},
+    newAnn:{title:"",body:"",date:"Mon"},
+    newBadge:"",
+    newFile:{term:TERMS[1],session:SESSIONS[2],file:null,fileName:"",fileType:""},
+    manualRpt:{term:TERMS[1],session:SESSIONS[2],teacherComment:"",principalComment:"",position:"",outOf:""},
+  };
+  STATE.formStep=0;
+  STATE.formRptMode="upload";
+}
+function openAddPupil(){
+  STATE.editingId=null; initFormData(null);
+  document.getElementById("form-title").textContent="Add New Pupil";
+  document.getElementById("form-id-display").style.display="none";
+  showPage("pg-form"); renderForm();
+}
+function openEditPupil(id){
+  STATE.editingId=id; initFormData(DB.pupils[id]);
+  document.getElementById("form-title").textContent="Editing: "+DB.pupils[id].name;
+  document.getElementById("form-id-badge").textContent=id;
+  document.getElementById("form-id-display").style.display="block";
+  showPage("pg-form"); renderForm();
+}
+function closeForm(){ showPage("pg-admin"); renderAdmin(); }
+function goStep(n){
+  STATE.formStep=n;
+  [0,1,2].forEach(i=>{ document.getElementById("stab"+i).classList.toggle("active",i===n); });
+  renderFormBody(); renderFormFooter();
+}
+function renderForm(){ goStep(0); }
+
+function renderFormBody(){
+  const body=document.getElementById("form-body");
+  const fd=STATE.formData;
+  const isEdit=!!STATE.editingId;
+  if(STATE.formStep===0){
+    body.innerHTML=`
+      ${!isEdit?`<div class="card">
+        <div class="card-title">🪪 Set Pupil ID</div>
+        <p style="font-size:13px;color:#64748B;margin-bottom:12px">Create a unique ID for this pupil. This is what they use to log in.</p>
+        <input id="f-id" class="finp" placeholder="e.g. NMPS/P4B/001" value="${fd.customId}"
+          oninput="fd_set('customId',this.value.toUpperCase());checkIdField()" style="font-family:monospace;font-size:15px;font-weight:800;letter-spacing:1px"/>
+        <div id="id-feedback"></div>
+        <div class="id-note">💡 Allowed: letters, numbers, /, -, _ · Min 3 characters · The pupil logs in with this ID + their password.</div>
+      </div>`:""}
+
+      <div class="card">
+        <div class="card-title">🖼️ Choose Avatar</div>
+        <div class="av-grid" id="av-grid">${AVATARS.map(a=>`<button class="av-btn${fd.avatar===a?" sel":""}" onclick="pickAvatar('${a}')">${a}</button>`).join("")}</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">👤 Personal Details</div>
+        <div class="fgrid">
+          <div class="field fspan"><label>Full Name</label><input id="f-name" class="finp" value="${fd.name}" placeholder="e.g. Fatima Abubakar" oninput="fd_set('name',this.value)"/></div>
+          <div class="field"><label>Date of Birth</label><input type="date" id="f-dob" class="finp" value="${fd.dob}" oninput="fd_set('dob',this.value)"/></div>
+          <div class="field"><label>Gender</label><select id="f-gen" class="finp" onchange="fd_set('gender',this.value)"><option${fd.gender==="Female"?" selected":""}>Female</option><option${fd.gender==="Male"?" selected":""}>Male</option></select></div>
+          <div class="field"><label>Class</label><select id="f-cls" class="finp" onchange="fd_set('cls',this.value)">${getClasses().map(c=>`<option${fd.cls===c?" selected":""}>${c}</option>`).join("")}</select></div>
+          <div class="field"><label>Class Teacher</label><input id="f-teacher" class="finp" value="${fd.teacher}" placeholder="Full name" oninput="fd_set('teacher',this.value)"/></div>
+          <div class="field"><label>Attendance (%)</label><input type="number" id="f-att" class="finp" value="${fd.attendance}" placeholder="e.g. 95" min="0" max="100" oninput="fd_set('attendance',this.value)"/></div>
+          <div class="field fspan"><label>Home Address</label><input id="f-addr" class="finp" value="${fd.address}" placeholder="Street, Ward, Maiduguri" oninput="fd_set('address',this.value)"/></div>
+          <div class="field"><label>Parent/Guardian</label><input id="f-pname" class="finp" value="${fd.parentName}" placeholder="Full name" oninput="fd_set('parentName',this.value)"/></div>
+          <div class="field"><label>Parent Phone</label><input id="f-pphone" class="finp" value="${fd.parentPhone}" placeholder="08012345678" oninput="fd_set('parentPhone',this.value)"/></div>
+          <div class="field"><label>Parent Email <span style="font-weight:400;opacity:.6">(for password recovery)</span></label><input id="f-pemail" class="finp" type="email" value="${fd.parentEmail}" placeholder="parent@example.com" oninput="fd_set('parentEmail',this.value)"/></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🏅 Badges / Awards</div>
+        <div id="badges-list" style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px">${fd.badges.map((b,i)=>`<span class="badge-chip">${b} <button onclick="removeBadge(${i})" style="background:none;border:none;cursor:pointer;color:#92400E;font-weight:900;font-size:14px;padding:0;line-height:1">×</button></span>`).join("")}</div>
+        <div style="display:flex;gap:8px">
+          <input id="f-badge" class="finp" style="flex:1" placeholder="e.g. ⭐ Star Reader" value="${fd.newBadge}" oninput="fd_set('newBadge',this.value)" onkeydown="if(event.key==='Enter')addBadge()"/>
+          <button class="btn-next" onclick="addBadge()">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📝 Homework Tasks</div>
+        <div id="hw-list">${fd.homework.map((h,i)=>`<div class="item-row"><div><div class="item-title">${h.subject}</div><div class="item-sub">${h.task} · Due: ${h.due}</div></div><button class="btn-remove" onclick="removeHw(${i})">Remove</button></div>`).join("")}</div>
+        <div class="fgrid" style="margin-top:8px">
+          <div class="field"><label>Subject</label><select id="f-hw-sub" class="finp" onchange="STATE.formData.newHw.subject=this.value">${getSubjects().map(s=>`<option${fd.newHw.subject===s?" selected":""}>${s}</option>`).join("")}</select></div>
+          <div class="field"><label>Due</label><input id="f-hw-due" class="finp" value="${fd.newHw.due}" placeholder="e.g. Friday" oninput="STATE.formData.newHw.due=this.value"/></div>
+          <div class="field fspan"><label>Task Description</label><input id="f-hw-task" class="finp" value="${fd.newHw.task}" placeholder="Describe the homework task…" oninput="STATE.formData.newHw.task=this.value"/></div>
+        </div>
+        <button class="btn-next" onclick="addHw()" style="width:100%;margin-top:8px">+ Add Task</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📣 Announcements / Notices</div>
+        <div id="ann-list">${fd.announcements.map((a,i)=>`<div class="item-row"><div><div class="item-title">${a.title}</div><div class="item-sub">${a.body} · ${a.date}</div></div><button class="btn-remove" onclick="removeAnn(${i})">Remove</button></div>`).join("")}</div>
+        <div class="fgrid" style="margin-top:8px">
+          <div class="field"><label>Title</label><input id="f-ann-title" class="finp" value="${fd.newAnn.title}" placeholder="e.g. Sports Day" oninput="STATE.formData.newAnn.title=this.value"/></div>
+          <div class="field"><label>Date</label><input id="f-ann-date" class="finp" value="${fd.newAnn.date}" placeholder="Mon" oninput="STATE.formData.newAnn.date=this.value"/></div>
+          <div class="field fspan"><label>Message</label><input id="f-ann-body" class="finp" value="${fd.newAnn.body}" placeholder="Notice details…" oninput="STATE.formData.newAnn.body=this.value"/></div>
+        </div>
+        <button class="btn-next" onclick="addAnn()" style="width:100%;margin-top:8px">+ Add Notice</button>
+      </div>
+    `;
+  } else if(STATE.formStep===1){
+    body.innerHTML=`
+      <div class="card">
+        <div class="card-title">📊 Scores · CA1 + CA2 + CA3 + CA4 (max 10 each) + Exam (max 60) = 100</div>
+        <p style="font-size:13px;color:#94A3B8;margin-top:-8px;margin-bottom:14px">Leave blank for subjects not taken.</p>
+        <div class="gtable-wrap"><table class="gtable">
+          <thead><tr><th>Subject</th><th>CA1</th><th>CA2</th><th>CA3</th><th>CA4</th><th>Exam</th><th>Total</th><th>Grade</th></tr></thead>
+          <tbody>${STATE.formGrades.map((g,i)=>{
+            const tot=calcTotal(g); const{grade}=gradeFrom(tot); const has=g.ca1||g.ca2||g.ca3||g.ca4||g.exam;
+            return `<tr class="${has?"ghas":""}">
+              <td style="font-weight:700;font-size:13px;white-space:nowrap">${g.icon} ${g.subject}</td>
+              <td><input type="number" class="gscore-inp" min="0" max="10" value="${g.ca1}" oninput="setGrade(${i},'ca1',this.value)" data-gi="${i}" data-gf="ca1"/></td>
+              <td><input type="number" class="gscore-inp" min="0" max="10" value="${g.ca2}" oninput="setGrade(${i},'ca2',this.value)"/></td>
+              <td><input type="number" class="gscore-inp" min="0" max="10" value="${g.ca3}" oninput="setGrade(${i},'ca3',this.value)"/></td>
+              <td><input type="number" class="gscore-inp" min="0" max="10" value="${g.ca4}" oninput="setGrade(${i},'ca4',this.value)"/></td>
+              <td><input type="number" class="gscore-inp" min="0" max="60" value="${g.exam}" oninput="setGrade(${i},'exam',this.value)"/></td>
+              <td style="font-size:18px;font-weight:900;color:${has?gradeCol(grade):"#CBD5E1"}">${has?tot:"—"}</td>
+              <td>${has?`<span class="pill" style="background:${gradeCol(grade)}22;color:${gradeCol(grade)}">${grade}</span>`:""}</td>
+            </tr>`;
+          }).join("")}</tbody>
+        </table></div>
+      </div>
+    `;
+  } else {
+    const rpts=STATE.formReports;
+    body.innerHTML=`
+      <div class="rpttab">
+        <button class="rpttab-btn${STATE.formRptMode==="upload"?" active":""}" onclick="setRptMode('upload')">⬆️ Upload File</button>
+        <button class="rpttab-btn${STATE.formRptMode==="manual"?" active":""}" onclick="setRptMode('manual')">✍️ Manual Entry</button>
+      </div>
+
+      ${STATE.formRptMode==="upload"?`
+      <div class="card">
+        <div class="card-title">📄 Upload Report Card (PDF or Image)</div>
+        <div class="fgrid" style="margin-bottom:12px">
+          <div class="field"><label>Term</label><select class="finp" id="r-term" onchange="STATE.formData.newFile.term=this.value">${TERMS.map(t=>`<option${STATE.formData.newFile.term===t?" selected":""}>${t}</option>`).join("")}</select></div>
+          <div class="field"><label>Session</label><select class="finp" id="r-sess" onchange="STATE.formData.newFile.session=this.value">${SESSIONS.map(s=>`<option${STATE.formData.newFile.session===s?" selected":""}>${s}</option>`).join("")}</select></div>
+        </div>
+        <label class="upload-zone" for="r-file-inp">
+          <div style="font-size:40px;margin-bottom:8px">${STATE.formData.newFile.fileName?"📋":"⬆️"}</div>
+          <div style="font-weight:800;color:${STATE.formData.newFile.fileName?"#1E293B":"#6366F1"};font-size:14px">${STATE.formData.newFile.fileName||"Click to select report card file"}</div>
+          <div style="font-size:12px;color:#94A3B8;margin-top:4px">${STATE.formData.newFile.fileName?"Click to change":"PDF or image (max 6 MB)"}</div>
+        </label>
+        <input type="file" id="r-file-inp" accept=".pdf,image/*" style="display:none" onchange="handleFileSelect(event)"/>
+        <button class="btn-next" onclick="addFileReport()" style="width:100%;margin-top:12px;padding:12px">+ Attach This File</button>
+      </div>`:`
+      <div class="card">
+        <div class="card-title">✍️ Manual Report Card Entry</div>
+        <p style="font-size:13px;color:#94A3B8;margin-top:-8px;margin-bottom:12px">Grades from Step 2 are included automatically.</p>
+        <div class="fgrid">
+          <div class="field"><label>Term</label><select class="finp" onchange="STATE.formData.manualRpt.term=this.value">${TERMS.map(t=>`<option${STATE.formData.manualRpt.term===t?" selected":""}>${t}</option>`).join("")}</select></div>
+          <div class="field"><label>Session</label><select class="finp" onchange="STATE.formData.manualRpt.session=this.value">${SESSIONS.map(s=>`<option${STATE.formData.manualRpt.session===s?" selected":""}>${s}</option>`).join("")}</select></div>
+          <div class="field"><label>Position in Class</label><input class="finp" value="${STATE.formData.manualRpt.position}" placeholder="e.g. 3" oninput="STATE.formData.manualRpt.position=this.value"/></div>
+          <div class="field"><label>Out of (Total Pupils)</label><input class="finp" value="${STATE.formData.manualRpt.outOf}" placeholder="e.g. 35" oninput="STATE.formData.manualRpt.outOf=this.value"/></div>
+          <div class="field fspan"><label>Class Teacher's Comment</label><textarea class="finp" rows="3" placeholder="Write teacher's comment…" oninput="STATE.formData.manualRpt.teacherComment=this.value">${STATE.formData.manualRpt.teacherComment}</textarea></div>
+          <div class="field fspan"><label>Head Teacher's Comment</label><textarea class="finp" rows="3" placeholder="Write head teacher's comment…" oninput="STATE.formData.manualRpt.principalComment=this.value">${STATE.formData.manualRpt.principalComment}</textarea></div>
+        </div>
+        <button style="width:100%;padding:12px;background:linear-gradient(135deg,#10B981,#059669);color:white;font-size:14px;font-weight:900;border-radius:13px" onclick="addManualReport()">+ Save This Report Card</button>
+      </div>`}
+
+      ${rpts.length?`<div class="card"><div class="card-title">📚 Attached Reports (${rpts.length})</div>
+      ${rpts.map((r,i)=>`<div class="rpt-attached-item">
+        <div style="font-size:30px">${r.type==="manual"?"📝":r.fileType?.includes("pdf")?"📋":"🖼️"}</div>
+        <div style="flex:1"><div style="font-weight:800;font-size:14px;color:#1E293B">${r.term} · ${r.session}</div>
+        <div style="font-size:12px;color:#94A3B8">${r.uploadedAt}</div></div>
+        <button class="btn-remove" onclick="removeReport(${i})">Remove</button>
+      </div>`).join("")}
+      </div>`:""}
+    `;
+  }
+}
+function renderFormFooter(){
+  const f=document.getElementById("form-footer");
+  const s=STATE.formStep;
+  f.innerHTML=`<button class="btn-cancel" onclick="closeForm()">Cancel</button>
+    ${s>0?`<button class="btn-back" onclick="goStep(${s-1})">← Back</button>`:""}
+    ${s<2?`<button class="btn-next" onclick="goStep(${s+1})">Next →</button>`:`<button class="btn-save" onclick="savePupil()">💾 Save Pupil</button>`}`;
+}
+
+// Form helpers
+function fd_set(k,v){ STATE.formData[k]=v; }
+function pickAvatar(a){
+  STATE.formData.avatar=a;
+  document.querySelectorAll(".av-btn").forEach(b=>b.classList.toggle("sel",b.textContent===a));
+}
+function setGrade(i,f,v){ STATE.formGrades[i][f]=v; refreshGradeRow(i); }
+function refreshGradeRow(i){
+  const g=STATE.formGrades[i]; const tot=calcTotal(g); const{grade}=gradeFrom(tot); const has=g.ca1||g.ca2||g.ca3||g.ca4||g.exam;
+  const row=document.querySelector(`.gtable tbody tr:nth-child(${i+1})`); if(!row)return;
+  row.className=has?"ghas":"";
+  row.cells[6].textContent=has?tot:"—"; row.cells[6].style.color=has?gradeCol(grade):"#CBD5E1";
+  row.cells[7].innerHTML=has?`<span class="pill" style="background:${gradeCol(grade)}22;color:${gradeCol(grade)}">${grade}</span>`:"";
+}
+function checkIdField(){
+  const v=STATE.formData.customId.toUpperCase();
+  const fb=document.getElementById("id-feedback"); if(!fb)return;
+  if(!v){fb.innerHTML="";return;}
+  if(v.length<3){fb.innerHTML=`<div class="id-err">⚠️ ID must be at least 3 characters.</div>`;return;}
+  if(!/^[A-Z0-9/_\-]+$/.test(v)){fb.innerHTML=`<div class="id-err">⚠️ Only letters, numbers, /, -, _ allowed.</div>`;return;}
+  if(DB.pupils[v]){fb.innerHTML=`<div class="id-err">⚠️ "${v}" is already taken. Choose another.</div>`;return;}
+  fb.innerHTML=`<div class="id-ok">✅ "${v}" is available</div>`;
+}
+function addBadge(){
+  const v=STATE.formData.newBadge.trim(); if(!v)return;
+  STATE.formData.badges.push(v); STATE.formData.newBadge="";
+  document.getElementById("badges-list").innerHTML=STATE.formData.badges.map((b,i)=>`<span class="badge-chip">${b} <button onclick="removeBadge(${i})" style="background:none;border:none;cursor:pointer;color:#92400E;font-weight:900;font-size:14px;padding:0;line-height:1">×</button></span>`).join("");
+  document.getElementById("f-badge").value="";
+}
+function removeBadge(i){ STATE.formData.badges.splice(i,1); renderFormBody(); }
+function addHw(){
+  const hw=STATE.formData.newHw; if(!hw.task.trim())return;
+  STATE.formData.homework.push({...hw,done:false}); STATE.formData.newHw={subject:getSubjects()[0],task:"",due:"Tomorrow"};
+  renderFormBody();
+}
+function removeHw(i){ STATE.formData.homework.splice(i,1); renderFormBody(); }
+function addAnn(){
+  const a=STATE.formData.newAnn; if(!a.title.trim()||!a.body.trim())return;
+  STATE.formData.announcements.push({...a}); STATE.formData.newAnn={title:"",body:"",date:"Mon"};
+  renderFormBody();
+}
+function removeAnn(i){ STATE.formData.announcements.splice(i,1); renderFormBody(); }
+function setRptMode(m){ STATE.formRptMode=m; renderFormBody(); }
+function handleFileSelect(e){
+  const f=e.target.files[0]; if(!f)return;
+  if(f.size>6*1024*1024){alert("File too large. Max 6 MB.");return;}
+  const r=new FileReader(); r.onload=ev=>{
+    STATE.formData.newFile.file=ev.target.result;
+    STATE.formData.newFile.fileName=f.name;
+    STATE.formData.newFile.fileType=f.type;
+    renderFormBody();
+  }; r.readAsDataURL(f);
+}
+function addFileReport(){
+  if(!STATE.formData.newFile.file){alert("Please select a file first.");return;}
+  STATE.formReports.push({...STATE.formData.newFile,type:"file",uploadedAt:new Date().toLocaleDateString("en-GB")});
+  STATE.formData.newFile={term:TERMS[1],session:SESSIONS[2],file:null,fileName:"",fileType:""};
+  renderFormBody();
+}
+function addManualReport(){
+  const m=STATE.formData.manualRpt;
+  if(!m.teacherComment.trim()){alert("Please enter the teacher's comment.");return;}
+  const cg=STATE.formGrades.filter(g=>g.ca1||g.ca2||g.ca3||g.ca4||g.exam).map(g=>{
+    const score=calcTotal(g);const{grade,remark}=gradeFrom(score);return{...g,score,grade,remark};
+  });
+  STATE.formReports.push({...m,type:"manual",grades:cg,uploadedAt:new Date().toLocaleDateString("en-GB"),fileName:`${m.term} ${m.session} — Manual Entry`});
+  STATE.formData.manualRpt={term:TERMS[1],session:SESSIONS[2],teacherComment:"",principalComment:"",position:"",outOf:""};
+  renderFormBody();
+}
+function removeReport(i){ STATE.formReports.splice(i,1); renderFormBody(); }
+function savePupil(){
+  const fd=STATE.formData;
+  if(!fd.name.trim()){alert("Please enter the pupil's full name.");return;}
+  const id=STATE.editingId||fd.customId.trim().toUpperCase();
+  if(!STATE.editingId){
+    if(!id){alert("Please enter a Pupil ID.");return;}
+    if(id.length<3){alert("Pupil ID must be at least 3 characters.");return;}
+    if(!/^[A-Z0-9/_\-]+$/.test(id)){alert("ID can only contain letters, numbers, /, -, _");return;}
+    if(DB.pupils[id]){alert(`ID "${id}" is already taken.`);return;}
+  }
+  const cg=STATE.formGrades.filter(g=>g.ca1||g.ca2||g.ca3||g.ca4||g.exam).map(g=>{
+    const score=calcTotal(g);const{grade,remark}=gradeFrom(score);return{...g,score,grade,remark};
+  });
+  const existing=DB.pupils[id]||{};
+  DB.pupils[id]={
+    ...existing,id,name:fd.name,dob:fd.dob,gender:fd.gender,
+    class:fd.cls,teacher:fd.teacher,avatar:fd.avatar,attendance:fd.attendance,
+    address:fd.address,parentName:fd.parentName,parentPhone:fd.parentPhone,parentEmail:fd.parentEmail,
+    badges:fd.badges,announcements:fd.announcements,homework:fd.homework,
+    grades:cg,reports:STATE.formReports,
+    password:existing.password||DEFAULT_PUPIL_PW
+  };
+  saveDB();
+  showToast(STATE.editingId?`${fd.name} updated!`:`${fd.name} added! Default password: ${DEFAULT_PUPIL_PW}`);
+  closeForm();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PUPIL PORTAL
+// ═══════════════════════════════════════════════════════════════
+function openPortal(){
+  const id=STATE.pupilId; const p=DB.pupils[id];
+  const col=getClassColor(p.class);
+  document.getElementById("portal-header").style.background=`linear-gradient(135deg,${col},${col}CC)`;
+  document.getElementById("portal-header").style.boxShadow=`0 8px 24px ${col}44`;
+  document.getElementById("p-av").textContent=p.avatar||"🎓";
+  document.getElementById("p-name").textContent="Hi, "+(p.name.split(" ")[0])+"! 👋";
+  document.getElementById("p-cls").textContent=p.class+" · "+(p.teacher||"—");
+  STATE.hwDone=(p.homework||[]).reduce((a,h,i)=>({...a,[i]:h.done}),{});
+  STATE.portalTab="home";
+  renderPortalNav(col);
+  renderPortalContent();
+  showPage("pg-portal");
+}
+function renderPortalNav(col){
+  const tabs=[{id:"home",label:"Home",icon:"🏠"},{id:"grades",label:"Grades",icon:"📊"},{id:"homework",label:"Tasks",icon:"📝"},{id:"reports",label:"Reports",icon:"📋"}];
+  document.getElementById("portal-nav").innerHTML=tabs.map(t=>`
+    <button class="bot-btn${STATE.portalTab===t.id?" active":""}" onclick="switchTab('${t.id}')" style="--color:${col}">
+      <span class="bi">${t.icon}</span>
+      <span class="bl" style="${STATE.portalTab===t.id?"color:"+col:""}">${t.label}</span>
+    </button>`).join("");
+}
+function switchTab(t){
+  STATE.portalTab=t;
+  const p=DB.pupils[STATE.pupilId];
+  const col=getClassColor(p.class);
+  renderPortalNav(col);
+  renderPortalContent();
+}
+function renderPortalContent(){
+  const id=STATE.pupilId; const p=DB.pupils[id];
+  const col=getClassColor(p.class);
+  const container=document.getElementById("portal-content");
+  if(STATE.portalTab==="home") container.innerHTML=renderHome(p,id,col);
+  else if(STATE.portalTab==="grades") container.innerHTML=renderGrades(p,col);
+  else if(STATE.portalTab==="homework") container.innerHTML=renderHomework(p,col);
+  else if(STATE.portalTab==="reports") container.innerHTML=renderReports(p,col);
+}
+
+function renderHome(p,id,col){
+  const avg=p.grades?.length?Math.round(p.grades.reduce((a,g)=>a+(g.score||0),0)/p.grades.length):null;
+  const today=new Date().toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
+  return `
+    <div class="date-bar">📅 ${today}</div>
+    <div class="two-stat">
+      <div class="sbox"><div class="sbox-icon">📈</div><div class="sbox-val" style="color:#16A34A">${avg!=null?avg+"%":"—"}</div><div class="sbox-lbl">Avg Score</div></div>
+      <div class="sbox"><div class="sbox-icon">✅</div><div class="sbox-val" style="color:#2563EB">${p.attendance?p.attendance+"%":"—"}</div><div class="sbox-lbl">Attendance</div></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-title">👤 My Details</div>
+      ${[["Pupil ID",id],["Class",p.class],["Class Teacher",p.teacher],["Date of Birth",p.dob],["Gender",p.gender],["Parent/Guardian",p.parentName],["Parent Phone",p.parentPhone],["Parent Email",p.parentEmail]].map(([k,v])=>`<div class="detail-row"><span class="dk">${k}</span><span class="dv">${v||"—"}</span></div>`).join("")}
+    </div>
+    ${p.badges?.length?`<div class="pcard"><div class="pcard-title">🏅 My Badges</div><div>${p.badges.map(b=>`<span class="badge-chip">${b}</span>`).join("")}</div></div>`:""}
+    ${p.announcements?.length?`<div class="pcard"><div class="pcard-title">📣 Notices</div>${p.announcements.map((a,i)=>`<div class="notice-item" style="${i>=p.announcements.length-1?"border:none":""}"><div class="notice-date">${a.date}</div><div><div class="notice-title">${a.title}</div><div class="notice-body">${a.body}</div></div></div>`).join("")}</div>`:""}
+  `;
+}
+function renderGrades(p,col){
+  if(!p.grades?.length) return `<div class="section-title">My Grades 📊</div><div class="empty-list"><div class="ei">📭</div><div class="et">No grades uploaded yet</div><div class="es">Your teacher will add your scores soon.</div></div>`;
+  const avg=Math.round(p.grades.reduce((a,g)=>a+(g.score||0),0)/p.grades.length);
+  const best=Math.max(...p.grades.map(g=>g.score||0));
+  return `
+    <div class="section-title">My Grades 📊</div>
+    <div class="grade-summary">
+      <div><div class="gs-val" style="color:#16A34A">${avg}%</div><div class="gs-lbl">Average</div></div>
+      <div><div class="gs-val" style="color:#2563EB">${best}%</div><div class="gs-lbl">Highest</div></div>
+      <div><div class="gs-val" style="color:#6366F1">${p.grades.length}</div><div class="gs-lbl">Subjects</div></div>
+    </div>
+    ${p.grades.map(g=>`
+      <div class="grade-item">
+        <div class="grade-icon">${g.icon}</div>
+        <div style="flex:1">
+          <div style="font-weight:800;color:#1E293B;font-size:14px">${g.subject}</div>
+          <div class="grade-bar-track"><div class="grade-bar-fill" style="width:${Math.min(g.score||0,100)}%;background:linear-gradient(90deg,${col},${col}88)"></div></div>
+          <div class="grade-meta">CA1: ${g.ca1||"—"} &nbsp;·&nbsp; CA2: ${g.ca2||"—"} &nbsp;·&nbsp; CA3: ${g.ca3||"—"} &nbsp;·&nbsp; CA4: ${g.ca4||"—"} &nbsp;·&nbsp; Exam: ${g.exam||"—"}</div>
+        </div>
+        <div class="grade-badge">
+          <div class="grade-letter" style="color:${gradeCol(g.grade)}">${g.grade}</div>
+          <div class="grade-score">${g.score}/100</div>
+          <div class="grade-remark" style="color:${gradeCol(g.grade)}">${g.remark}</div>
+        </div>
+      </div>`).join("")}
+  `;
+}
+function renderHomework(p,col){
+  if(!p.homework?.length) return `<div class="section-title">My Homework 📝</div><div class="empty-list"><div class="ei">🎉</div><div class="et">No homework assigned yet!</div></div>`;
+  const done=Object.values(STATE.hwDone).filter(Boolean).length;
+  return `
+    <div class="hw-hdr">
+      <div class="section-title" style="margin:0">My Homework 📝</div>
+      <div class="hw-count" style="background:${col}15;color:${col}">${done}/${p.homework.length} done</div>
+    </div>
+    ${p.homework.map((h,i)=>`
+      <div class="hw-item${STATE.hwDone[i]?" done":""}" onclick="toggleHw(${i})">
+        <div class="hw-check">${STATE.hwDone[i]?"✓":""}</div>
+        <div style="flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+            <span class="hw-subj">${h.subject}</span>
+            <span class="hw-due" style="background:${h.due==="Tomorrow"?"#FEE2E2":"#F0F4FF"};color:${h.due==="Tomorrow"?"#DC2626":"#7B8CC4"}">Due: ${h.due}</span>
+          </div>
+          <div class="hw-task">${h.task}</div>
+        </div>
+      </div>`).join("")}
+    <div class="hw-tip">Click any task to mark as done ✓</div>
+  `;
+}
+function renderReports(p,col){
+  if(!p.reports?.length) return `<div class="section-title">My Report Cards 📋</div><div class="empty-list"><div class="ei">📭</div><div class="et">No report cards yet</div><div class="es">Your teacher will upload your report card here.</div></div>`;
+  return `
+    <div class="section-title">My Report Cards 📋</div>
+    ${p.reports.map((r,i)=>`
+      <div class="rpt-item">
+        <div class="rpt-icon">${r.type==="manual"?"📝":r.fileType?.includes("pdf")?"📋":"🖼️"}</div>
+        <div style="flex:1;min-width:0">
+          <div class="rpt-term">${r.term}</div>
+          <div class="rpt-meta">${r.session} · ${r.uploadedAt}</div>
+          ${r.position?`<div class="rpt-pos">🏅 Position: ${r.position}${r.outOf?" of "+r.outOf:""}</div>`:""}
+        </div>
+        <button class="btn-view" style="background:${col}22;color:${col};border:2px solid ${col}44" onclick="viewReport(${i})">👁️ View</button>
+      </div>`).join("")}
+  `;
+}
+function toggleHw(i){
+  const id=STATE.pupilId; const p=DB.pupils[id];
+  STATE.hwDone[i]=!STATE.hwDone[i];
+  p.homework=p.homework.map((h,j)=>({...h,done:STATE.hwDone[j]||false}));
+  saveDB();
+  const col=getClassColor(p.class);
+  document.getElementById("portal-content").innerHTML=renderHomework(p,col);
+}
+function viewReport(i){
+  const p=DB.pupils[STATE.pupilId];
+  const r=p.reports[i];
+  document.getElementById("rpt-modal-title").textContent=r.term+" · "+r.session;
+  document.getElementById("rpt-modal-sub").textContent=(r.type==="manual"?"Manual Report Card":"Uploaded File")+" · "+r.uploadedAt;
+  const acts=document.getElementById("rpt-modal-acts");
+  acts.innerHTML="";
+  if(r.type==="manual"){
+    const pb=document.createElement("button"); pb.className="tb-btn"; pb.textContent="🖨️ Print"; pb.onclick=()=>printReport(r,p,STATE.pupilId);
+    acts.appendChild(pb);
+  }
+  if(r.type==="file"&&r.file){
+    const db2=document.createElement("a"); db2.className="tb-btn"; db2.textContent="⬇️ Download"; db2.href=r.file; db2.download=r.fileName; db2.style.borderRadius="11px"; db2.style.padding="9px 14px"; db2.style.fontSize="13px"; db2.style.fontWeight="700"; db2.style.background="rgba(255,255,255,.13)"; db2.style.color="white";
+    acts.appendChild(db2);
+  }
+  const cb=document.createElement("button"); cb.className="tb-btn btn-danger"; cb.style.background="#FEE2E2"; cb.style.color="#DC2626"; cb.textContent="✕ Close"; cb.onclick=()=>closeModal("overlay-report");
+  acts.appendChild(cb);
+  const body=document.getElementById("rpt-modal-body");
+  if(r.type==="manual"){
+    body.innerHTML=buildReportCard(r,p,STATE.pupilId);
+  } else if(r.fileType?.includes("pdf")){
+    body.innerHTML=`<embed src="${r.file}" type="application/pdf" style="width:100%;min-height:500px;border-radius:8px"/>`;
+  } else {
+    body.innerHTML=`<img src="${r.file}" alt="Report Card" style="max-width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.15)"/>`;
+  }
+  document.getElementById("overlay-report").classList.add("on");
+}
+function printReport(r,p,id){
+  const html=buildReportCard(r,p,id);
+  const w=window.open("","_blank");
+  w.document.write(`<!DOCTYPE html><html><head><title>Report — ${p.name}</title><style>body{margin:20px;font-family:Arial,sans-serif;}@media print{body{margin:0;}}.rc-table{width:100%;border-collapse:collapse;}.rc-table th,.rc-table td{padding:6px 8px;border:1px solid #ddd;font-size:11px;}.rc-table th{background:#f1f5f9;font-weight:800;}</style></head><body>${html}<script>setTimeout(()=>window.print(),400);<\/script></body></html>`);
+  w.document.close();
+}
+function buildReportCard(r,p,id){
+  const col=getClassColor(p.class);
+  const avg=r.grades?.length?Math.round(r.grades.reduce((a,g)=>a+(g.score||0),0)/r.grades.length):null;
+  return `<div class="rc" style="border:3px solid ${col}33">
+    <div class="rc-hdr" style="border-bottom:3px solid ${col}">
+      <div class="rc-emoji">🏫</div>
+      <div class="rc-school" style="color:${col}">${SCHOOL}</div>
+      <div class="rc-loc">${LOCATION}</div>
+      <div class="rc-badge" style="background:${col}15;color:${col}">${r.term} Report Card · ${r.session}</div>
+    </div>
+    <div class="rc-info">
+      ${[["Name",p.name],["Pupil ID",id],["Class",p.class],["Teacher",p.teacher||"—"],["Position",r.position?(r.outOf?r.position+" of "+r.outOf:r.position):"—"],["Attendance",p.attendance?p.attendance+"%":"—"]].map(([k,v])=>`<div><div class="rc-info-k">${k}</div><div class="rc-info-v">${v}</div></div>`).join("")}
+    </div>
+    ${r.grades?.length?`
+    <div style="margin-bottom:14px">
+      <div style="font-weight:800;font-size:14px;margin-bottom:8px">📊 Academic Performance</div>
+      <table class="rc-table">
+        <thead><tr style="background:${col}15">${["Subject","CA1","CA2","CA3","CA4","Exam","Total","Grade","Remark"].map(h=>`<th style="color:${col};border-bottom:2px solid ${col}33">${h}</th>`).join("")}</tr></thead>
+        <tbody>
+          ${r.grades.map((g,i)=>`<tr class="${i%2?"alt":""}">
+            <td style="font-weight:700">${g.icon} ${g.subject}</td>
+            <td style="text-align:center">${g.ca1||"—"}</td><td style="text-align:center">${g.ca2||"—"}</td><td style="text-align:center">${g.ca3||"—"}</td><td style="text-align:center">${g.ca4||"—"}</td><td style="text-align:center">${g.exam||"—"}</td>
+            <td style="font-size:15px;font-weight:900;color:${gradeCol(g.grade)}">${g.score}</td>
+            <td><span class="rc-grade-chip" style="background:${gradeCol(g.grade)}22;color:${gradeCol(g.grade)}">${g.grade}</span></td>
+            <td style="color:${gradeCol(g.grade)};font-weight:700">${g.remark}</td>
+          </tr>`).join("")}
+          <tr class="rc-avg-row" style="background:${col}15"><td colspan="4" style="text-align:right;font-weight:800">Overall Average:</td><td colspan="3" style="font-size:15px;font-weight:900;color:${col}">${avg}% · ${gradeFrom(avg||0).grade} — ${gradeFrom(avg||0).remark}</td></tr>
+        </tbody>
+      </table>
+      <div class="rc-key"><span class="rc-key-span">Key:</span>${[["A","75–100","Excellent"],["B","60–74","Very Good"],["C","50–59","Good"],["D","40–49","Pass"],["F","0–39","Fail"]].map(([g,rng,rem])=>`<span style="font-size:11px;font-weight:700;color:${gradeCol(g)}">${g}=${rng} (${rem})</span>`).join("")}</div>
+    </div>`:""}
+    <div class="rc-comments">
+      ${[["Class Teacher's Comment",r.teacherComment||"—"],["Head Teacher's Remark",r.principalComment||"—"]].map(([t,tx])=>`<div class="rc-cbox"><div class="rc-ck">${t}</div><div class="rc-cv">"${tx}"</div><div class="rc-sig">Signature: ___________________</div></div>`).join("")}
+    </div>
+    <div class="rc-foot">${SCHOOL} · ${LOCATION} · Generated ${new Date().toLocaleDateString("en-GB")}</div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CHANGE PASSWORD (inside portal)
+// ═══════════════════════════════════════════════════════════════
+function openChangePw(){
+  document.getElementById("cpw-cur").value="";
+  document.getElementById("cpw-new").value="";
+  document.getElementById("cpw-new2").value="";
+  document.getElementById("cpw-err").style.display="none";
+  document.getElementById("pw-str-fill2").style.width="0";
+  document.getElementById("pw-str-lbl2").textContent="";
+  document.getElementById("overlay-changepw").classList.add("on");
+}
+function doChangePw(){
+  const cur=document.getElementById("cpw-cur").value;
+  const nw=document.getElementById("cpw-new").value;
+  const nw2=document.getElementById("cpw-new2").value;
+  const errEl=document.getElementById("cpw-err");
+  const p=DB.pupils[STATE.pupilId];
+  if(cur!==p.password){errEl.textContent="⚠️ Current password is incorrect.";errEl.style.display="block";return;}
+  if(nw.length<6){errEl.textContent="⚠️ New password must be at least 6 characters.";errEl.style.display="block";return;}
+  if(nw!==nw2){errEl.textContent="⚠️ Passwords do not match.";errEl.style.display="block";return;}
+  if(nw===cur){errEl.textContent="⚠️ New password must be different from current.";errEl.style.display="block";return;}
+  p.password=nw; saveDB(); closeModal("overlay-changepw"); showToast("Password changed successfully! 🔒");
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CLOSE MODAL ON OVERLAY CLICK
+// ═══════════════════════════════════════════════════════════════
+document.querySelectorAll(".overlay").forEach(ov=>{
+  ov.addEventListener("click",e=>{ if(e.target===ov) ov.classList.remove("on"); });
+});
+
+// ═══════════════════════════════════════════════════════════════
+// STARS FOR LOGIN
+// ═══════════════════════════════════════════════════════════════
+function makeStars(containerId,n){
+  const c=document.getElementById(containerId); if(!c)return;
+  for(let i=0;i<n;i++){
+    const s=document.createElement("div"); s.className="star";
+    const sz=Math.random()*3+1.5;
+    s.style.cssText=`width:${sz}px;height:${sz}px;top:${Math.random()*100}%;left:${Math.random()*100}%;animation-delay:${Math.random()*3}s;animation-duration:${Math.random()*2+1}s;`;
+    c.appendChild(s);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+window.addEventListener("DOMContentLoaded",()=>{
+  loadDB();
+  initFirebaseSync();
+  makeStars("login-stars",22);
+  checkFileProtocolWarning();
+  setTimeout(()=>{
+    const sp=document.getElementById("splash");
+    if(sp){sp.classList.add("hide");setTimeout(()=>sp.remove(),600);}
+  },2000);
+});
+function checkFileProtocolWarning(){
+  if(location.protocol!=="file:") return;
+  const bar=document.createElement("div");
+  bar.id="file-warn-bar";
+  bar.style.cssText="position:fixed;top:0;left:0;right:0;z-index:9999;background:#B45309;color:#fff;font-size:12px;font-weight:700;text-align:center;padding:9px 14px;line-height:1.4;box-shadow:0 2px 10px rgba(0,0,0,.3);";
+  bar.innerHTML="⚠️ Running as a local file — saved data & passwords may not persist reliably (especially on mobile). Host this file online (e.g. Netlify Drop, GitHub Pages, Firebase Hosting) for reliable storage. <span style='text-decoration:underline;cursor:pointer;margin-left:6px' onclick=\"this.parentElement.remove()\">Dismiss</span>";
+  document.body.prepend(bar);
+}
+</script>
+</body>
+</html>
