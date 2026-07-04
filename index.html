@@ -2095,9 +2095,9 @@ function makeStars(containerId,n){
 // ═══════════════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════════════
-window.addEventListener("DOMContentLoaded",()=>{
+window.addEventListener("DOMContentLoaded", async ()=>{
   loadDB();
-  initFirebaseSync();
+  await initFirebaseSync();
   makeStars("login-stars",22);
   checkFileProtocolWarning();
   setTimeout(()=>{
